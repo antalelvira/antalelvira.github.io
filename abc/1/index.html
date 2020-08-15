@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="hu">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jqBootstrapValidation.min.js"></script>
+    <!-- ABC-UI -->
+    <link rel="stylesheet" href="http://dev.music.free.fr/web-music-tools/css/music.min.css" />
+    <script src="http://dev.music.free.fr/web-music-tools/js/abc-ui-1.0.0.min.js"></script>
+    <title>ABC prezentáció</title>
+</head>
+<body>
+<div class="container"> <!-- Bootstrap container eleje-->
+  <div class="page-header">
+    <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Az ABC jelölés</h1>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
+      <span class="sr-only">5% kész</span>
+    </div>
+  </div>
+  <h2 class="text-center">Mi az az ABC jelölés?</h2>
+  <p class="lead">Az ABC jelölés egy könnyen tanulható zene leíró nyelv. Papíron is működik, de ha számítógépen használjuk, annak több előnye is van! Többek között:
+  <ul>
+   <li class="lead">Egy nagyon kis méretű fájlba elfér egy énekeskönyvnyi zene.</li>
+   <li class="lead">Egy gombnyomással hagyományos kottát, vagy lejátszható, meghallgatható MIDI fájlt generálhatunk belőle.</li>
+   </ul>
+  </p>
+  <p class="lead">
+  Lássunk egy példát!
+  </p>
+  <div class="abc-source" align="center">
+      L:1/8
+      Q:1/4=120
+      K:G
+      %%MIDI program 24
+      G3 A B2 G2 | FFFA G2 D2  |
+w:Ál-lott hét híd a Pre-gel fo-lyó-ján\ ...
+  </div>
+  <!-- Alsó nav-->
+  <div class="row">
+    <div class="col-xs-12">
+      <hr />
+    </div>
+    <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
+      <button type="button" class="btn btn-default btn-block btn-lg" style="margin-bottom: 5px;" data-toggle="modal" data-target="#help">
+        <span class="glyphicon glyphicon-pause" style="margin-right: 6px;"></span> Segítség
+      </button>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <a class="btn btn-primary btn-block btn-lg" href="../2" role="button">
+      Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
+      </a>
+    </div>    
+  </div>
+  <!-- Segítség (modal)-->
+  <div id="help" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-info"><span class="glyphicon glyphicon-pause" style="margin-right: 6px;"></span> Segítség </h4>
+        </div>
+        <div class="modal-body">
+          <p class="text-info text-center">
+          Egy rövid leírás a program használatáról.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"><span class="text-info">Értem <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> <!--container vege-->
+
+<script>
+    $ABC_UI.init();
+</script>
+</body>
+</html>

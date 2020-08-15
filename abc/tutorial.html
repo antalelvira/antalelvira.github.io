@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head lang="fr">
+    <meta charset="UTF-8">
+    <title>ABC tutorial</title>
+    <link rel="stylesheet" href="http://dev.music.free.fr/web-music-tools/css/music.min.css" />
+    <script src="http://dev.music.free.fr/web-music-tools/js/harmony-1.0.0.min.js"></script>
+    <script src="http://dev.music.free.fr/web-music-tools/js/abc-ui-1.0.0.min.js"></script>
+</head>
+<body>
+<h1>Az ABC jelölés alapjai (ABC-UI csomag ismertetője)</h1>
+
+<h3>A minimum</h3>
+<div class="abc-source">CDEFGABc</div>
+
+
+<div class="abc-source">
+    "do"C "ré"D "mi"E "fa"F "sol"G "la"A "si"B "do"c |]
+    w:C D E F G A B C
+</div>
+
+<div class="abc-source">
+    L:1/2
+    CDEFGABc
+</div>
+
+<div class="abc-source">
+    L:1/4
+    K:Am
+    A,B,CDEF^GA
+</div>
+
+<div class="abc-source">
+    K:C shift=C_E
+    CDEFGABc
+</div>
+
+<h3>Hangmagasság</h3>
+
+<div class="abc-source">
+    L:1/4
+    A,,,,B,,,, | C,,,D,,,E,,,F,,,G,,,A,,,B,,,| C,,D,,E,,F,,G,,A,,B,,|
+    C,D,E,F,G,A,B, | CDEFGAB | cdefgab |
+    c'd'e'f'g'a'b' | c''d''e''f''g''a''b'' | c''' |]
+</div>
+
+<div class="abc-source">
+    L:1/4
+    K:C
+[K:C bass_8] A,,,,B,,,, | C,,,D,,,E,,,F,,,G,,,A,,,B,,, | [K:C bass] C,,D,,E,,F,,G,,A,,B,, |
+    C,D,E,F,G,A,B, | [K:C treble] CDEFGAB | cdefgab |
+    c'd'e'f'g'a'b' | [K:C treble^8] c''d''e''f''g''a''b'' | c''' |]
+</div>
+
+
+<h3>Módosítók</h3>
+
+<div class="abc-source">
+    __C _C =C ^C ^^C | __D _D =D ^D ^^D |
+    __E _E =E ^E ^^E | __F _F =F ^F ^^F |
+    __G _G =G ^G ^^G | __A _A =A ^A ^^A |
+    __B _B =B ^B ^^B |]
+</div>
+
+<h3>Ismétlőjelek</h3>
+<div class="abc-source">
+    C/ |: D | E :| F || G | :A |1 B :|2 c/ |]
+</div>
+
+<h3>A mértékek hossza</h3>
+<div class="abc-source">
+    L:1/4
+    [M:1/1] C4 | [M:1/2] D2 | [M:1/4] E | [M:1/8] F/ |
+    [M:2/1] C4D4 | [M:2/2] E2F2 | [M:2/4] GA | [M:2/8] B/c/ |
+    [M:3/1] C4D4E4 | [M:3/2] F2G2A2 | [M:3/4] Bcd | [M:3/8] C/D/E/ |
+    [M:4/1] C4D4E4F4 | [M:4/2] G2A2B2c2 | [M:4/4] CDEF | [M:4/8] C/D/E/F/ |
+    [M:none] C4 | DE | F/G/A/ | [M:C] CDEF |]
+</div>
+
+<h3>A tempo</h3>
+
+<div class="abc-source">
+    L:1/4
+    Q:1/4=40
+    M:4/4
+    CDEF | GABc |]
+</div>
+
+<h3>Hangok hossza</h3>
+
+<div class="abc-source">
+    T:A la ronde par défaut
+    C/D/E/F/G/A/B/ |
+</div>
+
+<div class="abc-source">
+    T:A la blanche
+    L:1/2
+    CDEFGAB |
+</div>
+
+<div class="abc-source">
+    T:A la noire
+    L:1/4
+    C2D2E2F2G2A2B2 |
+</div>
+
+<div class="abc-source">
+    T:Mélange
+    L:1/2
+    C2D3/2EF/G//A///B//// |
+</div>
+
+<h3>A szöveg</h3>
+<div class="abc-source">
+    "do"C "ré"D "mi"E "fa"F "sol"G "la"A "si"B "do"c |]
+</div>
+
+<div class="abc-source">
+    "_do"C "_ré"D "_mi"E "_fa"F "_sol"G "_la"A "_si"B "_do"c |]
+</div>
+
+<div class="abc-source">
+    "^C""do"C "^D""ré"D "^E""mi"E "^F""fa"F "^G""sol"G "^A""la"A "^B""si"B "^C""do"c |]
+</div>
+
+<div class="abc-source">
+    "do"C "ré"D "mi"E "fa"F "sol"G "la"A "si"B "do"c |]
+    w:C D E F G A B C
+</div>
+
+<div class="abc-source">
+    %%score (N 1)
+    [V:N] "do"x "ré"x "mi"x "fa"x "sol"x "la"x "si"x "do"x |]
+    [V:1] C D E F G A B c |]
+    w:C D E F G A B C
+</div>
+
+<h3>Akkordok</h3>
+
+<div class="abc-source">
+    L:1/4
+    [C2E2G2] | [CEG]2 | [CEG]-[CEG] | [C2EG][EG] | [CEG][CEG]/[CEG]/ |]
+</div>
+
+<div class="abc-source">
+    K:Cm
+    %%score (c 1)
+    [V:c] "Cm7"x  | "DØ7"x | "Eb+M7"x | "Fm7"x | "G7"x   | "AbM7"x | "B°7"x  |]
+    [V:1] [CEG=B] | [DFAc] | [EG=Bd]  | [FAce] | [G=Bdf] | [Aceg]  | [=Bdfa] |]
+    w:I II bIII IV V bVI VII
+</div>
+
+<div class="abc-source">
+    %%score (d c 1)
+    [V:c] "Cm7"x | "Dm7"x | "Em7"x | "FM7"x | "G7"x  | "Am7"x | "BØ7"x |]
+    [V:d] "I"x   | "II"x  | "III"x | "IV"x  | "V"x   | "VI"x  | "VII"x |]
+    [V:1] [CEGB] | [DFAc] | [EGBd] | [FAce] | [GBdf] | [Aceg] | [Bdfa] |]
+</div>
+
+
+
+
+<script>
+    $ABC_UI.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="hu">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jqBootstrapValidation.min.js"></script>
+    <!-- ABC-UI -->
+    <link rel="stylesheet" href="http://dev.music.free.fr/web-music-tools/css/music.min.css" />
+    <script src="http://dev.music.free.fr/web-music-tools/js/abc-ui-1.0.0.min.js"></script>
+    <title>ABC prezentáció</title>
+</head>
+<body>
+<div class="container"> <!-- Bootstrap container eleje-->
+  <div class="page-header">
+    <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Az ABC jelölés</h1>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+      <span class="sr-only">20% kész</span>
+    </div>
+  </div>
+  <h2 class="text-center">Miből áll a kotta? - Hangmagasság</h2>
+  <p class="lead">
+  A (relatív) szolmizációt mindenki ismeri:
+  </p>
+  <div class="abc-source" align="center">
+      L:1/4
+      Q:1/4=100
+      %%MIDI program 52
+      "dó"C "ré"D "mi"E "fá"F "szó"G "lá"A "ti"B "dó"c |
+  </div>
+  <p class="lead">
+  Az ABC jelölésben viszont a törzshangok ABC-s nevét használjuk (ez az abszolút szolmizáció):
+  </p>
+  <div class="abc-source" align="center">
+      L:1/4
+      Q:1/4=100
+      %%MIDI program 1
+      "C"C "D"D "E"E "F"F "G"G "A"A "H"B "C"c |
+  </div>
+  <p class="lead">
+  Ezt a hangsort így írhatjuk le az ABC jelöléssel:</p>
+  <div class="row justify-content-md-center">
+    <pre class="lead col-md-offset-2 col-md-8 text-center">
+    <code>CDEFGABc</code></pre>
+  </div>
+  <p class="lead">
+  Vegyük észre a következőket:
+  <ul><li class="lead"> Az egyvonalas oktáv hangjait nagybetűvel, a kétvonalas C-t viszont kisbetűvel írjuk.</li>
+      <li class="lead"> A "H" hang helyett angolosan "B"-t kell írni. </li>
+ <!--     <li class="lead">A violinkulcs alapértelmezésként megjelenik.</li>
+      <li class="lead">A kotta végét egy "|" és egy "]" jelöli. </li>
+-->  </ul></p>
+  <!-- Alsó nav-->
+  <div class="row">
+    <div class="col-xs-12">
+      <hr />
+    </div>
+    <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
+      <a class="btn btn-default btn-block btn-lg" href="../1" role="button">
+      <span class="glyphicon glyphicon-backward" style="margin-right: 6px;"></span> Vissza 
+      </a>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <a class="btn btn-primary btn-block btn-lg" href="../3" role="button">
+      Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
+      </a>
+    </div>    
+  </div>
+</div> <!--container vege-->
+
+<script>
+    $ABC_UI.init();
+</script>
+</body>
+</html>
