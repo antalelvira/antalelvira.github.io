@@ -12,7 +12,7 @@
     <!-- ABC-UI -->
     <link rel="stylesheet" href="/css/music.min.css" />
     <script src="/js/abc-ui-1.0.0.min.js"></script>
-    <title>ABC prezentáció</title>
+    <title>ABC kurzus</title>
 </head>
 <body>
 <div class="container"> <!-- Bootstrap container eleje-->
@@ -28,18 +28,20 @@
   <p class="lead">
   A (relatív) szolmizációt mindenki ismeri:
   </p>
-  <div class="abc-source" align="center">
+  <div class="abc-source 16 1.2" align="center">
       L:1/4
       Q:1/4=100
+      %%player_right
       %%MIDI program 52
       "dó"C "ré"D "mi"E "fá"F "szó"G "lá"A "ti"B "dó"c |
   </div>
   <p class="lead">
-  Az ABC jelölésben viszont a törzshangok ABC-s nevét használjuk (ez az abszolút szolmizáció):
+  Az ABC jelölésben viszont a törzshangok ábécés neveit használjuk (ez az abszolút szolmizáció):
   </p>
-  <div class="abc-source" align="center">
+  <div class="abc-source 16 1.2" align="center">
       L:1/4
       Q:1/4=100
+      %%player_right
       %%MIDI program 1
       "C"C "D"D "E"E "F"F "G"G "A"A "H"B "C"c |
   </div>
@@ -49,25 +51,34 @@
     <pre class="lead col-md-offset-2 col-md-8 text-center">
     <code>CDEFGABc</code></pre>
   </div>
-  <p class="lead">
-  Vegyük észre a következőket:
-  <ul><li class="lead"> Az egyvonalas oktáv hangjait nagybetűvel, a kétvonalas C-t viszont kisbetűvel írjuk.</li>
-      <li class="lead"> A "H" hang helyett angolosan "B"-t kell írni. </li>
- <!--     <li class="lead">A violinkulcs alapértelmezésként megjelenik.</li>
-      <li class="lead">A kotta végét egy "|" és egy "]" jelöli. </li>
--->  </ul></p>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-eye-open" style="margin-right: 6px;"></span>Vegyük észre!
+      <ul>
+          <li class="lead"> A „H” hang helyett angolosan "B"-t kell írni. Így kijön az ABC! <span class="glyphicon glyphicon-thumbs-up" style="margin-left: 6px;"></span></li>
+      </ul>
+    </p>
+  </blockquote>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-pencil" style="margin-right: 6px;"></span>Idézzük fel! 
+      <ol start="5">
+        <li class="lead">A példában az első és az utolsó hang is C, de az utolsó egy oktávval magasabban van. Hogyan különböztethetjük meg ezt a két hangot?</li>
+      </ol>
+    </p>
+  </blockquote>
   <!-- Alsó nav-->
   <div class="row">
     <div class="col-xs-12">
       <hr />
     </div>
     <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
-      <a class="btn btn-default btn-block btn-lg" href="../1-1intro" role="button">
+      <a class="btn btn-default btn-block btn-lg" href="../1-1intro/" role="button">
       <span class="glyphicon glyphicon-backward" style="margin-right: 6px;"></span> Vissza 
       </a>
     </div>
     <div class="col-xs-12 col-md-3">
-      <a class="btn btn-primary btn-block btn-lg" href="../2-2ABCExplorer" role="button">
+      <a class="btn btn-primary btn-block btn-lg" href="../1-3oktav/" role="button">
       Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
       </a>
     </div>    
