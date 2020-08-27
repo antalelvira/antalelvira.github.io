@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="hu">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jqBootstrapValidation.min.js"></script>
+    <!-- ABC-UI -->
+    <link rel="stylesheet" href="/css/music.min.css" />
+    <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <title>Címés egyéb szövegmezők</title>
+</head>
+<body>
+<div class="container"> <!-- Bootstrap container eleje-->
+  <div class="page-header">
+    <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Az ABC jelölés</h1>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+      <span class="sr-only">50% kész</span>
+    </div>
+  </div>
+  <h2 class="text-center">Cím és egyéb szövegmezők</h2>
+  <p class="lead">Cím</p>
+  <p class="lead">Dalszöveg (dallam alá tördelve és folytonosan)</p>
+  <p class="lead">Egyéb feliratok, akkordok</p>
+
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-pencil" style="margin-right: 6px;"></span> Jegyezzük le az alábbi dallamokat! 
+      <ol start="7">
+        <li class="lead"></li>
+      </ol>
+      <!-- EÉ -->
+<!--      <div class="abc-source 16 1.2" align="center">
+        M:2/2
+        L:1/2
+        Q:1/4=120
+        K:C
+        %%player_right
+        %%MIDI program 25
+         |]
+      </div>-->
+      <!-- EÉ553 -->
+      <div class="abc-source 16 1.2" align="center">
+        M:2/2
+        L:1/4
+        Q:1/4=100
+        K:G
+        %%player_right
+        %%MIDI program 24
+        "G"B B A B | "e"A<'G-G2 | "a"A<'A B c | "D"A3 z |]
+        w: Ál-dá-sod-dal megy-ünk, | megy-ünk in-nen el. 
+      </div>
+    </p>
+  </blockquote>
+  <!-- Alsó nav-->
+  <div class="row">
+    <div class="col-xs-12">
+      <hr />
+    </div>
+    <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
+      <a class="btn btn-default btn-block btn-lg" href="../1-09ismetles/" role="button">
+      <span class="glyphicon glyphicon-backward" style="margin-right: 6px;"></span> Vissza 
+      </a>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <a class="btn btn-primary btn-block btn-lg" href="../2-01otthon/" role="button">
+      Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
+      </a>
+    </div>    
+  </div>
+</div> <!--container vege-->
+
+<script>
+    $ABC_UI.init();
+</script>
+</body>
+</html>

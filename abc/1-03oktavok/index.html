@@ -12,7 +12,7 @@
     <!-- ABC-UI -->
     <link rel="stylesheet" href="/css/music.min.css" />
     <script src="/js/abc-ui-1.0.0.min.js"></script>
-    <title>ABC kurzus</title>
+    <title>Miből áll a kotta? - Oktávok</title>
 </head>
 <body>
 <div class="container"> <!-- Bootstrap container eleje-->
@@ -20,11 +20,11 @@
     <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Az ABC jelölés</h1>
   </div>
   <div class="progress">
-    <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
-      <span class="sr-only">25% kész</span>
+    <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%;">
+      <span class="sr-only">15% kész</span>
     </div>
   </div>
-  <h2 class="text-center">Miből áll a kotta? - Oktáv</h2>
+  <h2 class="text-center">Miből áll a kotta? - Oktávok</h2>
   <p class="lead">
  Kottáinkban leggyakrabban az <span style="color:gold">egyvonalas oktáv</span> és a <span style="color:lime">kétvonalas oktáv</span> hangjai szerepelnek: 
   </p>
@@ -38,8 +38,7 @@
   </div>
   <p class="lead">Ezeket az egyszerűség kedvéért <span style="color:gold">nagybetűkkel</span> és <span style="color:lime">kisbetűkkel</span> jelöljük az ABC-ben:</p>
   <div class="row justify-content-md-center">
-    <pre class="lead col-md-offset-2 col-md-8 text-center">
-    <code><span style="color:gold">CDEFGAB</span><span style="color:lime">cdefgab</span></code></pre>
+    <pre class="lead col-md-offset-2 col-md-8 text-center"><code><span style="color:gold">CDEFGAB</span><span style="color:lime">cdefgab</span></code></pre>
   </div>
   <p class="lead">
     Ha akarunk, használhatunk magasabb hangokat is: a <span style="color:cyan">háromvonalas oktáv</span> hangjait egy aposztróf jelöli, a <span style="color:blue">négyvonalas oktáv</span> hangjait kettő, stb. 
@@ -53,12 +52,20 @@
       "C"!cyan!c' "D"!cyan!d' "E"!cyan!e' "F"!cyan!f' "G"!cyan!g' "A"!cyan!a' "H"!cyan!b' | "C"!blue!c'' "D"!blue!d'' "E"!blue!e'' "F"!blue!f'' "G"!blue!g'' "A"!blue!a'' "H"!blue!b'' | "C"!indigo!c'''
   </div>
   <div class="row justify-content-md-center">
-    <pre class="lead col-md-offset-2 col-md-8 text-center">
-      <code><span style="color:cyan">c'd'e'f'g'a'b'</span><span style="color:blue">c''d''e''f''g''a''b''</span><span style="color:indigo">c'''</span></code></pre>
+    <pre class="lead col-md-offset-2 col-md-8 text-center"><code><span style="color:cyan">c'd'e'f'g'a'b'</span><span style="color:blue">c''d''e''f''g''a''b''</span><span style="color:indigo">c'''</span></code></pre>
   </div>
   <p class="lead">
     Mélyebb hangokat is le tudunk írni: a <span style="color:coral">kisoktáv</span> hangjait vesszővel jelöljük, a <span style="color:brown">nagyoktáv</span> hangjait két vesszővel, stb. 
   </p>
+  <div class="abc-source 16 1.2" align="center">
+    L:1/4
+    Q:1/4=120
+    K:C clef=treble
+    %%player_right
+    %%MIDI program 1
+    "C"!gold!C | "H"!coral!B, "A"!coral!A, "G"!coral!G, "F"!coral!F, "E"!coral!E, "D"!coral!D, "C"!coral!C, | "H"!brown!B,, "A"!brown!A,, "G"!brown!G,, "F"!brown!F,, "E"!brown!E,, "D"!brown!D,, "C"!brown!C,, |
+  </div>
+  <p class="lead">Ezt persze már érdemesebb violinkulcs helyett inkább basszuskulccsal írni:</p>
   <div class="abc-source 16 1.2" align="center">
       L:1/4
       Q:1/4=120
@@ -68,13 +75,17 @@
       "C"!gold!C | "H"!coral!B, "A"!coral!A, "G"!coral!G, "F"!coral!F, "E"!coral!E, "D"!coral!D, "C"!coral!C, | "H"!brown!B,, "A"!brown!A,, "G"!brown!G,, "F"!brown!F,, "E"!brown!E,, "D"!brown!D,, "C"!brown!C,, |
   </div>
   <div class="row justify-content-md-center">
-    <pre class="lead col-md-offset-2 col-md-8 text-center">
-    <code><span style="color:coral">C,D,E,F,G,A,B,</span><span style="color:brown">C,,D,,E,,F,,G,,A,,B,,</span></code></pre>
+    <pre class="lead col-md-offset-2 col-md-8 text-center"><code><span style="color:coral">C,D,E,F,G,A,B,</span><span style="color:brown">C,,D,,E,,F,,G,,A,,B,,</span></code></pre>
   </div>
-  
+  <p class="lead">A legpraktikusabb kulcsot automatikusan megválasztja helyettünk a számítógép!</p>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-eye-open" style="margin-right: 6px;"></span>A violinkulcsot G-kulcsnak, a basszuskulcsot F-kulcsnak is nevezik. Kitalálod, hogy miért?</p>
+  </blockquote> 
   <p class="lead">
     Hat különböző magasságú C hang egy kottában? Semmi gond!
   </p>
+  <!--violinkulcs kényszeríthető: K:C clef=treble-->
   <div class="abc-source 16 1.2" align="center">
       L:1/4
       Q:1/4=120
@@ -84,8 +95,7 @@
       "_háromvonalas C"!cyan!C'' "^négyvonalas C"!blue!C''' "_kétvonalas C"!lime!C' "^egyvonalas C"!gold!C "^kis C"!coral!C, "_nagy C"!brown!C,,
   </div>
   <div class="row justify-content-md-center">
-    <pre class="lead col-md-offset-2 col-md-8 text-center">
-      <code><span style="color:cyan">c'</span><span style="color:blue">c''</span><span style="color:lime">c</span><span style="color:gold">C</span><span style="color:coral">C,</span><span style="color:brown">C,,</span></code></pre>
+    <pre class="lead col-md-offset-2 col-md-8 text-center"><code><span style="color:cyan">c'</span><span style="color:blue">c''</span><span style="color:lime">c</span><span style="color:gold">C</span><span style="color:coral">C,</span><span style="color:brown">C,,</span></code></pre>
   </div>
   <blockquote class="blockquote">
     <p class="lead">
@@ -100,7 +110,7 @@
         K:C
         %%player_right
         %%MIDI program 1
-        C | EF Gc | BA G E | AA GF | ED C ||
+        C | EF Gc | BA G E | AA GF | ED C |]
       </div>
     </p>
   </blockquote>
@@ -110,12 +120,12 @@
       <hr />
     </div>
     <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
-      <a class="btn btn-default btn-block btn-lg" href="../1-2hangmagassag/" role="button">
+      <a class="btn btn-default btn-block btn-lg" href="../1-02hangmagassag/" role="button">
       <span class="glyphicon glyphicon-backward" style="margin-right: 6px;"></span> Vissza 
       </a>
     </div>
     <div class="col-xs-12 col-md-3">
-      <a class="btn btn-primary btn-block btn-lg" href="../1-4hangertek/" role="button">
+      <a class="btn btn-primary btn-block btn-lg" href="../1-04hangertek/" role="button">
       Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
       </a>
     </div>    

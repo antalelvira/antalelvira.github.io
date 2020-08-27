@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="hu">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jqBootstrapValidation.min.js"></script>
+    <!-- ABC-UI -->
+    <link rel="stylesheet" href="/css/music.min.css" />
+    <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <title>Miből áll a kotta? - Módosítójelek</title>
+</head>
+<body>
+<div class="container"> <!-- Bootstrap container eleje-->
+  <div class="page-header">
+    <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Az ABC jelölés</h1>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+      <span class="sr-only">25% kész</span>
+    </div>
+  </div>
+  <h2 class="text-center">Miből áll a kotta? - Módosítójelek</h2>
+  <p class="lead">Az ütemmutató előtt, vagy akár az ütemeink kellős közepén is találkozhatunk módosítójelekkel.
+    Melyek ezek?
+  </p>
+  <div class="abc-source" align="center">
+    T: 
+    M:
+    L:1/4
+    Q:1/4=100
+    K:C
+    %%player_right
+    %%MIDI program 1
+    "_kereszt"^E F ^F/F/ "_feloldójel"=F/F/ | G "_bé"_G ^F2 |
+  </div>
+  <div class="row justify-content-md-center">
+    <pre class="lead col-md-offset-2 col-md-8 text-center"><code>L:1/4
+<abbr title="&#x266f; E">^E</abbr> F <abbr title="&#x266f; F">^F</abbr>/F/ <abbr title="&#x266e; F">=F</abbr>/F/ | G <abbr title="&#x266d; G">_G</abbr> <abbr title="&#x266f; F">^F</abbr>2 |</code></pre>
+  </div>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-pencil" style="margin-right: 6px;"></span>Ismételd át! 
+      <ol start="9">
+        <li class="lead">Hogyan módosítja a kereszt és a bé azt a hangot, ami elé kitesszük?</li>
+        <li class="lead">Meddig tart a módosítójelek hatása, ha egy ütem közben tesszük ki? Mindig csak egy hangra érvényes a módosítás?</li>
+        <li class="lead">Mi lesz annak a hangnak a neve, amit az F felemelésével kapunk?</li>
+        <li class="lead">Hogy hívjuk azt a hangot, ami a G leszállításával áll elő?</li>
+        <li class="lead">Mi a neve magyarul a leszállított H hangnak?</li>
+        <li class="lead">Mit tudunk a szekund hangközről? Mi a nagyszekund és a kisszekund?</li>
+        <li class="lead">Mekkora a távolság, vagyis milyen hangköz van az Asz és az Aisz között?</li>
+        <li class="lead">Hogyan viszonyul egymáshoz a Disz és az Esz?</li>
+        <li class="lead">Hogy hívhatjuk másként az Eiszt?</li>
+      </ol>
+    </p>
+  </blockquote>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-eye-open" style="margin-right: 6px;"></span>Tudtad-e?
+      <ul>
+          <li class="lead">Természetes hangolásnál a nagyszekund is kétféle lehet, és a félhang sem pont fele egyik egész hangnak sem! Mi a kiegyenlített (egyenletesen temperált) hangolásról tanulunk, mert a modern zenében ez az elterjedt. <br/>A különbségről kérdezz csak meg egy fizikust, vagy egy régizenészt! &#x1F609;</li>
+      </ul>
+    </p>
+  </blockquote>
+  <!-- Alsó nav-->
+  <div class="row">
+    <div class="col-xs-12">
+      <hr />
+    </div>
+    <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
+      <a class="btn btn-default btn-block btn-lg" href="../1-04hangertek/" role="button">
+      <span class="glyphicon glyphicon-backward" style="margin-right: 6px;"></span> Vissza 
+      </a>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <a class="btn btn-primary btn-block btn-lg" href="../1-06elojegyzes/" role="button">
+      Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
+      </a>
+    </div>    
+  </div>
+</div> <!--container vege-->
+
+<script>
+    $ABC_UI.init();
+</script>
+</body>
+</html>

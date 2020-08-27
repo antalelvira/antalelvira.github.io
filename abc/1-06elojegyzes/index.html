@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="hu">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jqBootstrapValidation.min.js"></script>
+    <!-- ABC-UI -->
+    <link rel="stylesheet" href="/css/music.min.css" />
+    <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <title>Miből áll a kotta? - Előjegyzés</title>
+</head>
+<body>
+<div class="container"> <!-- Bootstrap container eleje-->
+  <div class="page-header">
+    <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Az ABC jelölés</h1>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+      <span class="sr-only">30% kész</span>
+    </div>
+  </div>
+  <h2 class="text-center">Miből áll a kotta? - Előjegyzés</h2>
+  <p class="lead">Ha az ütemmutató előtt szerepelnek módosítójelek, azt <em>előjegyzés</em>nek hívjuk.<!--194.--></p>
+  <p class="lead">Az előjegyzés két dologban is különbözik az eseti, vagyis az ütem közben kitett módosítójeltől:</p>
+  <ol>
+    <li class="lead">A hatása nem csak egy ütemre, hanem az egész kottára kiterjed.</li>
+    <li class="lead">Minden oktávfekvésben érvényes. Pl. az egy kereszt előjegyzés nem csak a kétvonalas F-et, hanem minden oktáv F-jét felemeli egy fél hanggal.</li>
+  </ol>
+  <blockquote class="blockquote">
+  <p class="lead">
+    <span class="glyphicon glyphicon-exclamation-sign" style="margin-right: 6px;"></span> A kvintoszlop
+    <ul>
+      <table>
+        <tr>
+          <td><div class="abc-source inline" align="center">
+            T: 
+            M:
+            L:1/4
+            Q:1/4=100
+            K:Bb
+            %%noplayer
+            C
+          </div></td>
+        </tr></table>
+        <li class="lead"> Ide jön egy ábra</li>
+    </ul>
+  </p>
+  </blockquote>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-eye-open" style="margin-right: 6px;"></span>Tudtad-e?
+      <ul>
+          <li class="lead"> A keresztnek és a bének is létezik dupla változata! Ezeknek akkor van szerepe, ha előjegyzéssel már eleve módosított hangot szeretnénk tovább módosítani. Az eseti módosítójel mindig a végállapotot jelöli, tehát az előjegyzést nem kell még egyszer hozzáadni!</li>
+      </ul>
+        <div class="abc-source" align="center">
+            T: 
+            M:
+            L:1/4
+            Q:1/4=100
+            K:Bb
+            %%player_right
+            %%MIDI program 1
+            d "_duplabé"__e | e =e | 
+          </div>
+          <div class="row justify-content-md-center">
+<pre class="lead col-md-offset-2 col-md-8 text-center"><code>L:1/4
+K:Bb
+d <abbr title="&#x266d;&#x266d; e">__e</abbr> | e =e |</code></pre>
+          </div>
+          <div class="abc-source" align="center">
+            T: 
+            M:
+            L:1/4
+            Q:1/4=100
+            K:G
+            %%player_right
+            %%MIDI program 1
+            G "^duplakereszt"^^F | F =F |
+          </div>
+<pre class="lead col-md-offset-2 col-md-8 text-center"><code>L:1/4
+K:G
+G <abbr title="&#x266f;&#x266f; F = x F">^^F</abbr> | F =F |</code></pre>
+    </p>
+  </blockquote>
+  <!-- Alsó nav-->
+  <div class="row">
+    <div class="col-xs-12">
+      <hr />
+    </div>
+    <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
+      <a class="btn btn-default btn-block btn-lg" href="../1-05modositojelek/" role="button">
+      <span class="glyphicon glyphicon-backward" style="margin-right: 6px;"></span> Vissza 
+      </a>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <a class="btn btn-primary btn-block btn-lg" href="../1-07egyebritmus/" role="button">
+      Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
+      </a>
+    </div>    
+  </div>
+</div> <!--container vege-->
+
+<script>
+    $ABC_UI.init();
+</script>
+</body>
+</html>
