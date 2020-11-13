@@ -12,6 +12,22 @@
     <!-- ABC-UI -->
     <link rel="stylesheet" href="/css/music.min.css" />
     <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <style>
+      table {
+        width: 100%;
+        text-align: center;
+      }
+      th {
+        height: 2em;
+        text-align: center;
+      }
+      th, td {
+        width: 25%;
+      }
+      tbody tr:hover {
+        background-color: #f5f5f5;
+      }
+    </style>
     <title>Miből áll a kotta? - Előjegyzés</title>
 </head>
 <body>
@@ -36,17 +52,41 @@
     <span class="glyphicon glyphicon-exclamation-sign" style="margin-right: 6px;"></span> A kvintoszlop
     <ul>
       <table>
+      <thead>
         <tr>
-          <td><div class="abc-source inline" align="center">
-            T: 
-            M:
-            L:1/4
-            Q:1/4=100
-            K:Bb
-            %%noplayer
-            C
-          </div></td>
-        </tr></table>
+          <th>Előjegyzés</th>
+          <th>Módosított hangok</th>
+          <th>Dúr hangnem</th>
+          <th>ABC jelölés</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&#x266f;&#x266f;&#x266f;</td>
+          <td>Fisz, Cisz, Gisz</td>
+          <td>A</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>&#x266f;&#x266f;</td>
+          <td>Fisz, Cisz</td>
+          <td>D</td>
+          <td>D</td>
+        </tr>
+        <tr>
+          <td>&#x266f;</td>
+          <td>Fisz</td>
+          <td>G</td>
+          <td>G</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>-</td>
+          <td>C</td>
+          <td>C (elhagyható)</td>
+        </tr>
+      </tbody>
+      </table>
         <li class="lead"> Ide jön egy ábra</li>
     </ul>
   </p>
