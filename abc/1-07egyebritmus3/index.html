@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="hu">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jqBootstrapValidation.min.js"></script>
+    <!-- ABC-UI -->
+    <link rel="stylesheet" href="/css/music.min.css" />
+    <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <title>Miből áll a kotta? - Cezúra és korona</title>
+</head>
+<body>
+<div class="container"> <!-- Bootstrap container eleje-->
+  <div class="page-header">
+    <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Az ABC jelölés</h1>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+      <span class="sr-only">40% kész</span>
+    </div>
+  </div>
+  <h2 class="text-center">Miből áll a kotta? - Cezúra és korona</h2>
+
+  <p class="lead">Egyházi énekeskönyvünk használ még két jelet, ami egy hang, vagy szünet tetszőleges hosszú kitartását jelzi.</p>
+  <p class="lead">Szinte minden énekünkben szerepelnek rövid függőleges vonalkák bizonyos ütemek végén, a legfölső kottavonalon. Ezek egy zenei gondolat végét jelölik, nevük <em>cezúra</em> (olaszosan caesura). Az előadó érzése alapján egy rövid szünetet szokás itt tartani. ABC-ben úgy tudunk ilyet produkálni, ha a megelőző hang elé írjuk a következőt: !shortphrase!</p>
+  <p class="lead">A másik  jel a <em>korona</em>. Az olaszosan fermata-nak nevezett koronát általában a versszak utolsó hangjára teszik, és azt jelenti, hogy a megjelölt hangot ízlés szerint lehet nyújtani. Ez a dallam nyugvópontja. Jele a kottában egy félkörív, alatta ponttal. Az ABC kódban egy, a hangjegy elé írt H betűvel jelöljük.</p>
+  <p class="lead">Lássunk egy példát a cezúrára és a koronára!</p>
+  <!-- EÉ530-->
+  <div class="abc-source 16 1.2" align="center">
+    M:
+    L:1/8
+    Q:1/8=110
+    K:G
+    %%player_right
+    %%MIDI program 73
+    EF GG FB | F2 !shortphrase!F2 | 
+    w:E-zer ma-dár ví-gan csen-gő 
+    BB BB AB | F2 !shortphrase!F2 |
+    w:É-ne-ké-től zeng az er-dő.
+    GE ^DE FG | F2 !shortphrase!F2 |
+    w:Nem is vet-nek, még-se fél-nek, 
+    GE ^DE FG | E2 HE2 |] 
+    w:Köny-nyű szív-vel ví-gan él-nek.
+  </div>
+  <p class="lead">A dallam ABC kódja pedig:</p>
+  <div class="row justify-content-md-center">
+    <pre class="lead col-md-offset-2 col-md-8 text-center"><code><abbr title="Ha nem akarok ütemmutatót írni, az M: után nem írok semmit.">M:</abbr>
+L:1/8
+K:G
+EF  GG FB | F2 <abbr title="Az F után egy cezúra következik.">!shortphrase!F2</abbr> | 
+BB  BB AB | F2 !shortphrase!F2 | 
+GE ^DE FG | F2 !shortphrase!F2 | 
+GE ^DE FG | E2             <abbr title="Az E-n korona van.">HE2</abbr> |]</code></pre>
+  </div>
+<!--  <p class="lead">triolák</p>-->
+
+  <!-- Alsó nav-->
+  <div class="row">
+    <div class="col-xs-12">
+      <hr />
+    </div>
+    <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
+      <a class="btn btn-default btn-block btn-lg" href="../1-07egyebritmus2/" role="button">
+      <span class="glyphicon glyphicon-backward" style="margin-right: 6px;"></span> Vissza 
+      </a>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <a class="btn btn-primary btn-block btn-lg" href="../1-07egyebritmus4/" role="button">
+      Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
+      </a>
+    </div>    
+  </div>
+</div> <!--container vege-->
+
+<script>
+    $ABC_UI.init();
+</script>
+</body>
+</html>

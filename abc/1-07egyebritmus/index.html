@@ -12,7 +12,7 @@
     <!-- ABC-UI -->
     <link rel="stylesheet" href="/css/music.min.css" />
     <script src="/js/abc-ui-1.0.0.min.js"></script>
-    <title>Miből áll a kotta? - Egyéb ritmusképletek</title>
+    <title>Miből áll a kotta? - Egyéb ritmusképletek: pontozott hangok</title>
 </head>
 <body>
 <div class="container"> <!-- Bootstrap container eleje-->
@@ -20,58 +20,51 @@
     <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Az ABC jelölés</h1>
   </div>
   <div class="progress">
-    <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%;">
-      <span class="sr-only">35% kész</span>
+    <div class="progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%;">
+      <span class="sr-only">33% kész</span>
     </div>
   </div>
-  <h2 class="text-center">Miből áll a kotta? - Egyéb ritmusképletek</h2>
-  <p class="lead">Pontozott hangok <!--pl. 166 3. sora, 167., 244--></p>
-  <p class="lead">átkötések</p>
-  <p class="lead">korona (fermata)</p>
-<!--  <p class="lead">triolák</p>-->
+  <h2 class="text-center">Miből áll a kotta? - Egyéb ritmusképletek: pontozott hangok</h2>
+  <p class="lead">Már tudjuk, hogyan jegyezhetjük le az egész hang felezésével előálló hangértékeket (a fél hangot, negyedet, nyolcadot, stb.). Zenéinkben azonban gyakran előfordulnak bonyolultabb ritmusképletek, például a <em>nyújtott ritmus</em> és az <em>éles ritmus</em>: <!--pl. 166 3. sora, 167., 244--></p>
+  <div class="abc-source 16 1.2" align="center">
+    M: 2/4
+    L:1/4
+    Q:1/4=90
+    K:C
+    %%player_right
+    %%MIDI program 12
+    d e | "_nyújtott ritmus"d > e | "_éles ritmus"e < d | d2 |]
+  </div>
+  <p class="lead">Emlékszel a <em>pontozott hangok</em> jelentésére? A hangjegy után írt pont 50%-os nyújtást jelent, vagyis a fél hangot nyújtjuk egy negyeddel, a negyedet egy nyolcaddal, stb. A 2/4-es ütemünkbe tehát vagy két negyed hang „fér”, vagy egy pontozott negyed és egy nyolcad. Esetleg egy fél hang egyedül.</p>
+  <p class="lead">Az eddigi ABC ismereteink alapján hogyan kottáznánk le a fenti sort?
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapsediv">Egy jó megoldásért kattints ide!</a>
+    <div class="collapse" id="collapsediv">
+      <div class="card card-body">
+        <p class="lead">Például így:</p>
+        <div class="row justify-content-md-center">
+          <pre class="lead col-md-offset-2 col-md-8 text-center"><code>M:2/4
+L:1/8
+d2 e2 | d3 e | e d3 | d4 |]</code></pre>
+        </div>
+      </div>
+    </div>
+  </p>
 
-  <blockquote class="blockquote">
-    <p class="lead">
-      <span class="glyphicon glyphicon-pencil" style="margin-right: 6px;"></span> Jegyezzük le az alábbi dallamokat! 
-      <ol start="7">
-        <li class="lead"></li>
-      </ol>
-      <!-- EÉ577 -->
-      <div class="abc-source 16 1.2" align="center">
-        M:2/2
-        L:1/2
-        Q:1/4=120
-        K:C
-        %%player_right
-        %%MIDI program 25
-        A,>A | FEDC | B,>A,| A,2 |]
+  <p class="lead">Az egyszerűség kedvéért a nyújtott és az éles ritmust az ABC kódban relációs jelekkel is leírhatjuk: a „kacsacsőr” mindig a pontozott hang felé fordul. Pl. „c > c” azt jelenti, hogy az első hangérték a második háromszorosa, míg „c < c” esetében pont fordítva, a második hang a nyújtott.</p>
+
+  <p class="lead">Hogy néz ki tehát a fenti kottasor ABC kódja a pontozott ritmus jelöléssel?
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapsediv2">Kattints a megoldásért!</a>
+    <div class="collapse" id="collapsediv2">
+      <div class="card card-body">
+        <div class="row justify-content-md-center">
+          <pre class="lead col-md-offset-2 col-md-8 text-center"><code>M:2/4
+L:1/4
+d e | d > e | e < d | d2 |]</code></pre>
+        </div>
       </div>
-      <ol start="7">
-        <li class="lead"></li>
-      </ol>
-      <!-- EÉ565 -->
-      <div class="abc-source 16 1.2" align="center">
-        M:2/2
-        L:1/4
-        Q:1/4=120
-        K:D
-        %%player_right
-        %%MIDI program 25
-        %A,B,| D2 D>B, | D<'F E<'E | D4-| D2 |
-        F G | A2 A>F  | A<'c B<'B | A4-| A2|]
-      </div>
-      <!-- EÉ564 -->
-      <div class="abc-source 16 1.2" align="center">
-        M:4/4
-        L:1/8
-        Q:1/4=100
-        K:E
-        %%player_right
-        %%MIDI program 24
-        G4 | G>F E>C | B,4 E4 |] % F F2 E F2 E2 | GF GF E4 |]
-      </div>
-    </p>
-  </blockquote>
+    </div>
+  </p>
+  
   <!-- Alsó nav-->
   <div class="row">
     <div class="col-xs-12">
@@ -83,7 +76,7 @@
       </a>
     </div>
     <div class="col-xs-12 col-md-3">
-      <a class="btn btn-primary btn-block btn-lg" href="../1-08hangkotes/" role="button">
+      <a class="btn btn-primary btn-block btn-lg" href="../1-07egyebritmus2/" role="button">
       Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
       </a>
     </div>    

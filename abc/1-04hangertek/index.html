@@ -35,7 +35,7 @@
       Q:1/4=120
       K:C
       %%player_right
-      %%MIDI program 1
+      %%MIDI program 13
       "_egész"A4 | "_fél"A2 A2 | "_negyed"A A AA |
       "_nyolcad"A/ A/A/2 A/ A/A/A/A/ | 
       "_tizenhatod"A/4 A/4 A/4A/4 A/4 A/4A/4A/4 A/4A/4A/4A/4 A/4A/4A/4A/4 |
@@ -56,87 +56,36 @@
         <li class="lead">Az ettől hosszabb hangokat a hangmagasság után írt szám szorzóval jelölhetjük (pl. A2 = kettő negyed, vagyis fél hosszú A hang).</li>
         <li class="lead">Az alapértelmezésnél rövidebb hangokat pedig „/” után írt osztóval jelöljük (pl. A/2 = a negyedhez képest fele olyan hosszú hang, vagyis egy nyolcad hosszú A hang). „/2” helyett írhatok csak „/”-t is.</li>
         <li class="lead">Érdemes a dal leggyakoribb hangértékét alapértelmezésnek választani, így kevesebbet kell írni.</li>
-        <li>  <p class="lead">A fenti kóddal egyenértékű a két következő:</p>
-          <div class="row justify-content-md-center">
-          <pre class="lead col-md-offset-2 col-md-8 col-md-offset-2 text-center">
-            <code class="left">M:4/4</code>
-            <code class="left">L:1/8</code>
-            <code class="left">A8 | A4 A4 | A2 A2 A2A2 | 
-              A AA A AAAA | 
-              A/ A/ A/A/ A/ A/A/A/ A/A/A/A/ A/A/A/A/ |</code>
-          </pre>
-          <pre class="lead col-md-offset-2 col-md-8 text-center">
-            <code class="left">M:4/4</code>
-            <code class="left">L:1/16</code>
-            <code class="left">A16 | A8 A8 | A4 A4 A4A4 | 
-              A2 A2A2 A2 A2A2A2A2 | 
-              A A AA A AAA AAAA AAAA |</code>
-          </pre>
-          </div></li>
-          <li class="lead">A szóközök is számítanak! Ha nem teszünk szóközt az egymást követő nyolcadok, vagy tizenhatodok közé, akkor azok össze lesznek kötve.</li>
-      </ul>
+        </ul>
     </p>
   </blockquote>
 
-  <p class="lead">
-    Hány hang fér egy ütembe? Az az ütem „hosszától” is függ! Ezt az <em>ütemmutató</em> árulja el nekünk.
-  <br/>A fenti példában „M:4/4”-el jelöltük, hogy 4/4-es ütemeink vannak (ezekbe éppen négy negyed fér). Az <em>ütemjel</em>eket ettől függetlenül nekünk kell helyesen kitenni, így: |
-  </p>
-    <p class="lead">
-  Természetesen <em>szünet</em> is létezik bármilyen időtartamban, lejegyzéséhez a hangmagasság helyére „z” betűt kell írni.
-  </p>
-  <div class="abc-source 16 1.2" align="center">
-      M:4/4
-      L:1/4
-      Q:1/4=120
-      K:C
-      %%player_right
-      %%MIDI program 1
-      A4 | "_egész szünet"z4 | 
-      A2 "_fél szünet"z2 | A "_negyed szünet"z Az | 
-      A/ "_nyolcad szünet"z/ A/ z/ A/A/A/A/ | 
-      A/4 "_tizenhatod szünet"z/4 A/4 z/4 A/4 A/4A/4A/4 A/4A/4A/4A/4 A/4A/4A/4A/4 |
-  </div>
-  <div class="row justify-content-md-center">
+  <p class="lead">Akkor most ugyanazt többféleképpen is írhatom? Igen! 
+    A fenti kóddal egyenértékű például a két következő:</p>
+    <div class="row justify-content-md-center">
+    <pre class="lead col-md-offset-2 col-md-8 col-md-offset-2 text-center">
+      <code class="left">M:4/4</code>
+      <code class="left">L:1/8</code>
+      <code class="left">A8 | A4 A4 | A2 A2 A2A2 | 
+        A AA A AAAA | 
+        A/ A/ A/A/ A/ A/A/A/ A/A/A/A/ A/A/A/A/ |</code>
+    </pre>
     <pre class="lead col-md-offset-2 col-md-8 text-center">
       <code class="left">M:4/4</code>
-      <code class="left">L:1/4</code>
-      <code class="left">A4 | z4 | 
-        A2 z2 | A z Az | 
-        A/ z/ A/ z/ A/A/A/A/ | 
-        A/4 z/4 A/4 z/4 A/4 A/4A/4A/4 A/4A/4A/4A/4 A/4A/4A/4A/4 |</code></pre>
-  </div>
-  <blockquote class="blockquote">
-    <p class="lead">
-      <span class="glyphicon glyphicon-pencil" style="margin-right: 6px;"></span> Jegyezzük le az alábbi dallamokat! 
-      <ol start="7">
-        <li class="lead"></li>
-      </ol>
-      <!-- EÉ179 -->
-      <div class="abc-source 16 1.2" align="center">
-        M:4/4
-        L:1/8
-        Q:1/4=90
-        K:C
-        %%player_right
-        %%MIDI program 25
-        D2 DE F2 E2 | DD AA G4 | A2 GF E2 C2 | DE FG E4 |]
-      </div>
-      <ol start="8">
-        <li></li>
-      </ol>
-      <!-- EÉ562 -->
-      <div class="abc-source 16 1.2" align="center">
-        M:4/4
-        L:1/8
-        Q:1/4=90
-        K:C
-        %%player_right
-        %%MIDI program 25
-        B3 G G4 | c3 G G4 | z2 BA G4 | A3 B A4 |]
-      </div>
-    </p>
-  </blockquote>
+      <code class="left">L:1/16</code>
+      <code class="left">A16 | A8 A8 | A4 A4 A4A4 | 
+        A2 A2A2 A2 A2A2A2A2 | 
+        A A AA A AAA AAAA AAAA |</code>
+    </pre>
+    </div>
+  <p class="lead">Észrevetted, hogy a szóközök is számítanak? Ha nem teszünk szóközt az egymást követő nyolcadok, vagy tizenhatodok közé, akkor azok össze lesznek kötve.</p>
+
+  <p class="lead">Végülis hány hang fér egy ütembe?
+    Az az ütem „hosszától” is függ! Ezt az <em>ütemmutató</em> árulja el nekünk.
+ <br/>Az előző példában „M:4/4”-el jelöltük, hogy 4/4-es ütemeink vannak (ezekbe éppen négy negyed fér).<br/>
+ Az <em>ütemjel</em>eket ettől függetlenül nekünk kell helyesen kitenni, jelük egy függőleges vonal: |<br/>
+ A dallam vége pedig: |]</p>
+ </p>
   <!-- Alsó nav-->
   <div class="row">
     <div class="col-xs-12">
@@ -148,7 +97,7 @@
       </a>
     </div>
     <div class="col-xs-12 col-md-3">
-      <a class="btn btn-primary btn-block btn-lg" href="../1-05modositojelek/" role="button">
+      <a class="btn btn-primary btn-block btn-lg" href="../1-04hangertek2/" role="button">
       Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
       </a>
     </div>    

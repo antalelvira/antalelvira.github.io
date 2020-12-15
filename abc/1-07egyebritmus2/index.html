@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="hu">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jqBootstrapValidation.min.js"></script>
+    <!-- ABC-UI -->
+    <link rel="stylesheet" href="/css/music.min.css" />
+    <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <title>Miből áll a kotta? - Egyéb ritmusképletek: átkötés</title>
+</head>
+<body>
+<div class="container"> <!-- Bootstrap container eleje-->
+  <div class="page-header">
+    <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Az ABC jelölés</h1>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100" style="width: 36%;">
+      <span class="sr-only">36% kész</span>
+    </div>
+  </div>
+  <h2 class="text-center">Miből áll a kotta? - Egyéb ritmusképletek: átkötés</h2>
+  
+  <p class="lead">Az egész hang felezésével le nem írható hangértékeket az úgynevezett <em>átkötés</em>ek segítségével is le lehet kottázni. Hallgasd meg ezt:</p>
+  <div class="abc-source 16 1.2" align="center">
+    M:2/4
+    L:1/4
+    Q:1/4=90
+    K:C
+    %%player_right
+    %%MIDI program 12
+    "_nyújtott ritmus"d > e | "_átkötés"d-d/ e/ | "_éles ritmus"e < d | "_átkötés" e/ d-d/ |]
+  </div>
+  <p class="lead">Átkötésnek hívjuk, ha a kottában több, közvetlenül egymást követő, azonos hangmagasságú hangjegyet egy íves vonallal összekötünk. A jelentése pedig, hogy az összekötött hangjegyek teljes időtartama alatt egy kitartott hangot kell énekelni. ABC-ben úgy jelölhetem az átkötést, hogy két egymást követő hangjegy közé kötőjelet teszek. A fenti sor ABC kódja tehát:</p>
+  <div class="row justify-content-md-center">
+    <pre class="lead col-md-offset-2 col-md-8 text-center"><code>M:2/4
+L:1/4
+K:C
+d > e | d-d/ e/ | e < d | e/ d-d/ |]</code></pre>
+  </div>
+
+  <p class="lead">A pontozás helyett persze nem célszerű ezt a jelölést használni, hiszen bonyolultabb lesz tőle a kotta. Viszont nagyon jól jön, ha egy olyan hosszú hangot kell leírni, ami egy ütembe „nem fér el”. Például:</p>
+  <div class="abc-source 16 1.2" align="center">
+    M:4/4
+    L:1/4
+    Q:1/4=90
+    K:C
+    %%player_right
+    %%MIDI program 67
+    C,,/ F,,3  A,,/ | C,4-| C,4 |-C, z3 |]
+  </div>
+  <div class="row justify-content-md-center">
+    <pre class="lead col-md-offset-2 col-md-8 text-center"><code>M:4/4
+L:1/4
+K:C
+C,,/ F,,3  A,,/ | C,4<abbr title="A kötőjelet kiteszem az ütemvonal elé, ...">-| </abbr>C,4<abbr title="... vagy az ütemvonal után."> |-</abbr>C, <abbr title="Ez egy pontozott szünet lesz, látod?">z3</abbr> |]</code></pre>
+  </div>
+<!--  <p class="lead">triolák</p>-->
+
+  <!-- Alsó nav-->
+  <div class="row">
+    <div class="col-xs-12">
+      <hr />
+    </div>
+    <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
+      <a class="btn btn-default btn-block btn-lg" href="../1-07egyebritmus/" role="button">
+      <span class="glyphicon glyphicon-backward" style="margin-right: 6px;"></span> Vissza 
+      </a>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <a class="btn btn-primary btn-block btn-lg" href="../1-07egyebritmus3/" role="button">
+      Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
+      </a>
+    </div>    
+  </div>
+</div> <!--container vege-->
+
+<script>
+    $ABC_UI.init();
+</script>
+</body>
+</html>
