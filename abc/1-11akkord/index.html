@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="hu">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jqBootstrapValidation.min.js"></script>
+    <!-- ABC-UI -->
+    <link rel="stylesheet" href="/css/music.min.css" />
+    <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <title>Akkordjelölés és egyéb megjegyzések</title>
+</head>
+<body>
+<div class="container"> <!-- Bootstrap container eleje-->
+  <div class="page-header">
+    <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Az ABC jelölés</h1>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" style="width: 68%;">
+      <span class="sr-only">68% kész</span>
+    </div>
+  </div>
+  <h2 class="text-center">Akkordjelölés és egyéb megjegyzések</h2>
+  <p class="lead">Ifjúsági énekeink sokszor tartalmaznak <em>betűs akkordjelölést</em> is. Ezt azok tudják igazán értékelni, akik gitáron, vagy zongorán szeretnék kísérni az éneket!</p>
+  <p class="lead">Például:</p>
+  <!-- EÉ575 -->
+  <div class="abc-source 16 1.2" align="center">
+    M:3/4
+    L:1/8
+    Q:1/8=120
+    K:D
+    %%player_right
+    %%MIDI program 25
+    DF | "D"A>A A2 "G"BB | "D"A4 |]
+    w:Té-ged kér szí-vünk, Jé-zus, jöjj!
+  </div>
+  <p class="lead">A hangok fölé írt „D” és „G” betűk alapján a zenész tudja, mit játsszon a hangszerén. (Amatőr zenész esetleg <a href="https://hu.wikipedia.org/wiki/Akkord#Bet%C5%B1s_akkordjel%C3%B6l%C3%A9s">puskázik</a>.)</p>
+  <p class="lead">Az ABC jelölésben egyszerűen a megfelelő hang elé, idézőjelek közé írhatjuk az akkord nevét.
+  <div class="row justify-content-md-center">
+    <pre class="lead col-md-offset-2 col-md-8 text-center"><code>M:3/4
+L:1/8
+K:D
+DF | "D"A>A A2 "G"BB | "D"A4 |]
+w:Té-ged kér szí-vünk, Jé-zus jöjj!</code></pre>
+  </div>
+  <p class="lead">Ha a kottát elsősorban nyomtatásra, emberi olvasásra készítjük, nem kell sokat gondolkoznunk: az idézőjelek közé többé-kevésbé bármilyen szöveget beírhatunk. Mivel az akkordjelölésre több rendszer is létezik, a kotta-megjelenítő nem fog problémázni akkor sem, ha más, az énekesnek szóló instrukciókat, pl. szolmizációs hangokat írunk be.</p>
+  <p class="lead">Tegyünk magunknak egy szívességet, és ha csak egy <em>megjegyzést</em> szeretnénk írni, kezdjük az idézőjeles szövegünket egy kalap karakterrel (pl. "^kiskutya")! Ugyanis néhány számítógépes program le is tudja játszani a kísérő akkordokat, és ha kihagyjuk a kalapot, a megjegyzésünket is megpróbálja majd értelmezni a program.</p>
+    
+  <p class="lead">Összefoglalva: ha arra hajtunk, hogy a számítógép le is játssza a zenei kíséretet, használjuk következetesen az <a href="http://www.lesession.co.uk/abc/abc_notation_part2.htm#guitar">angolos jelöléseket</a>, egyébként pedig kezdjük kalappal a szöveget!</p>
+
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-eye-open" style="margin-right: 6px;"></span>Mi a helyzet, ha néhány akkordot két hang közé szeretnék beírni?
+      <ul>
+          <li class="lead"><p class="lead">Az akkordjelölés az ABC jelölésben mindig egy hanghoz, vagy szünethez kapcsolódik. Viszont a „z”-vel jelölt, kottában megjelenő szüneten kívül létezik egy nem nyomtatott, de lejátszott szünetjel is, az „x”. Jó trükk lehet, ha ebből beszúrunk egy kellően rövidet:</p></li>
+          <div class="abc-source 16 1.2" align="center">
+            M: 3/4
+            L:1/8
+            Q:1/8=120
+            K:C
+            %%player_right
+            %%MIDI program 25
+            "C"z C"G"EG "C"C2 | "G"C3"C"x/64C "G"C2 | "G"C6 "C"x/64 "C"x/64 |]
+          </div>
+          <div class="row justify-content-md-center">
+            <pre class="lead col-md-offset-2 col-md-8 text-center"><code>M: 3/4
+L:1/8
+K:C
+"C"z C"G"EG "C"C2 | "G"C3"C"x/64C "G"C2 | "G"C6 "C"x/64 "C"x/64 |]</code></pre>
+          </div>
+      </ul>
+    </p>
+  </blockquote>
+  <!-- Alsó nav-->
+  <div class="row">
+    <div class="col-xs-12">
+      <hr />
+    </div>
+    <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
+      <a class="btn btn-default btn-block btn-lg" href="../1-10szoveg3/" role="button">
+      <span class="glyphicon glyphicon-backward" style="margin-right: 6px;"></span> Vissza 
+      </a>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <a class="btn btn-primary btn-block btn-lg" href="../1-12osszefoglalas/" role="button">
+      Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
+      </a>
+    </div>    
+  </div>
+</div> <!--container vege-->
+
+<script>
+    $ABC_UI.init();
+</script>
+</body>
+</html>

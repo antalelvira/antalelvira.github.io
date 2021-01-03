@@ -20,28 +20,75 @@
     <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Fájlkezelés, programismeret</h1>
   </div>
   <div class="progress">
-    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
-      <span class="sr-only">65% kész</span>
+    <div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%;">
+      <span class="sr-only">78% kész</span>
     </div>
   </div>
   <h2 class="text-center">Hogyan használhatom az ABC jelölést a saját gépemen?</h2>
-  <p class="lead">
-  Legegyszerűbben egy egyszerű szövegszerkesztő program (pl. a Windowsba beépített Jegyzettömb, vagy a külön telepíthető, de teljesen ingyenes Notepad++) segítségével írhatok ABC-s kottát.
+  <p class="lead">Az ABC-s kottákat <type>.abc</type> kiterjesztésű, egyszerű szöveges fájlokban tároljuk. <a class="btn btn-primary" data-toggle="collapse" role="button" href="#collapsediv1">></a>
+    <div class="collapse" id="collapsediv1">
+      <ul>
+        <li class="lead"> Akár a Jegyzettömbbel is bele tudunk nézni! &#x1F60A;</li>
+      </ul>
+    </div>
+  </p>
+
+  <p class="lead">Egy <type>.abc</type> fájl több kottát is tartalmazhat! Épp ezért minden kottát egy X mezővel azonosítunk a fájlon belül. <a class="btn btn-primary" data-toggle="collapse" href="#collapsediv2">></a>
+  <div class="collapse" id="collapsediv2">
+    <ul>
+      <li class="lead">A kották indexe, tehát az X mezőben szereplő azonosító szám fájlon belül nem ismétlődhet.</li>
+      <li class="lead">Az egyes kották között (az X mezők előtt) az olvashatóság kedvéért egy-egy üres sort is szokás hagyni.</li>
+      <li class="lead">A többi fejléc-mezőnek is kötött sorrendje van! Kötelező mezők a kotta fejlécében, kötelezően ebben a sorrendben:</li>
+      <div class="row justify-content-md-center">
+        <pre class="lead col-md-offset-2 col-md-8 text-left"><code>X: szabadon választott azonosító szám (index)
+T: cím (title)
+M: ütemmutató (meter)
+L: alapértelmezett hangérték (default note length)
+K: előjegyzés (key)</code></pre>
+      </div>
+      <li class="lead">Minden fejléc-mező külön sorban szerepel.</li>
+      <li class="lead">Az L és K sorok közé további opcionális mezők illeszthetők, pl. „Q: tempo” (lásd később), „C: szerző”, „O: forrás”, stb.</li>
+    </ul>
+  </div>
+  </p>
+  <p class="lead">Az internetről komplett zenegyűjteményeket is le lehet letölteni ABC formátumban! <a class="btn btn-primary" data-toggle="collapse" href="#collapsediv3">></a>
+    <div class="collapse" id="collapsediv3">
+      <ul>
+        <li class="lead">Az angolszász népdaloktól a többszólamű Bach műveken keresztül a kortárs könnyűzenéig mindenfélét találhatunk.</li>
+        <li class="lead">Érdemes az <a href="http://abcnotation.com/tunes">abcnotation.com dallamkeresőjén</a> (angolul) nézelődni. </li>
+      </ul>
+    </li>
+    </div>
   </p>
   <p class="lead">
-    .abc fájlok létrehozása, rendszerezése (mappák), az ABC fájl kötelező elemei
+    Kotta nyomtatásához, zene lejátszásához célszoftvert kell indítanunk. <a class="btn btn-primary" data-toggle="collapse" href="#collapsediv4">></a>
+    <div class="collapse" id="collapsediv4">
+      <ul>
+        <li class="lead">Az ABCexplorer nevű program például mindezeket tudja. A továbbiakban ezzel a programmal fogunk megismerkedni.</li>
+      </ul>
+    </li>
+    </div>
   </p>
-  <p class="lead">karakterkódolás</p>
-  <p class="lead">
-    Kotta gyártásához, zene lejátszásához célszoftvert kell indítanunk, pl. az ABCexplorert.
-  </p>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-pencil" style="margin-right: 6px;"></span>Gondoljuk végig!
+      <ol start="51">
+        <li class="lead">Hogyan lehet mappákat és fájlokat létrehozni, másolni, mozgatni, törölni?</li>
+        <li class="lead">Hol találjuk az internetről letöltött fájlokat? Hogyan tudunk egy <type>.zip</type>-et kicsomagolni?</li>
+        <li class="lead">Milyen szövegszerkesztő programokat ismerünk? Melyiknek mi az előnye, hátránya?</li>
+        <li class="lead">Mi a különbség a karakteres és a bináris fájlformátumok között? Mondjunk példát mindkettőre!</li>
+        <li class="lead">Hogyan tudunk a legegyszerűbb módon egy egyszerű szöveges fájlt létrehozni?</li>
+        <li class="lead">Hogyan tudunk egy szöveges fájlban keresni, szövegrészeket cserélni?</li>
+      </ol>
+    </p>
+  </blockquote>
   <!-- Alsó nav-->
   <div class="row">
     <div class="col-xs-12">
       <hr />
     </div>
     <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
-      <a class="btn btn-default btn-block btn-lg" href="../1-10szoveg/" role="button">
+      <a class="btn btn-default btn-block btn-lg" href="../1-12osszefoglalas3/" role="button">
       <span class="glyphicon glyphicon-backward" style="margin-right: 6px;"></span> Vissza 
       </a>
     </div>

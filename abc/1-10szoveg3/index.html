@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head lang="hu">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jqBootstrapValidation.min.js"></script>
+    <!-- ABC-UI -->
+    <link rel="stylesheet" href="/css/music.min.css" />
+    <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <title>Zeneszöveg (folytatás)</title>
+</head>
+<body>
+<div class="container"> <!-- Bootstrap container eleje-->
+  <div class="page-header">
+    <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Az ABC jelölés</h1>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+      <span class="sr-only">65% kész</span>
+    </div>
+  </div>
+  <h2 class="text-center">Zeneszöveg (folytatás)</h2>
+  <p class="lead">Általában az első versszakot a hangok alá szoktuk írni, a többi versszakot pedig a szöveg alá. Pl. a „Kimegy a Magvető” két versszakkal: </p>
+  <div class="abc-source 16 1.2" align="center">
+    T:Kimegy a Magvető
+    M:2/4
+    L:1/8
+    Q:1/8=110
+    C:Túrmezei Erzsébet
+    O:Népdal
+    K:F
+    %%player_right
+    %%no_player
+    FF C2 | FF F2 | 
+    w:Ki-megy a Mag-ve-tő, 
+    FF G2 | AG F2 |
+    w:Hin-ti szét a ma-got,
+    BA G2 | GG c2 | 
+    w:A-rany-ló ma-gocs-kák, 
+    BA G2 | AG F2 |]
+    w:Jó föld-be hull-ja-tok!
+    W:2.Ne útfél fogadjon,
+    W:Hol rátok taposnak,
+    W:S éhesen kapnak fel
+    W:Károgó madarak.
+  </div>
+  <p class="lead">Hogy néz ki a fenti kotta ABC kódja?
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapsediv2">Kattints a megoldásért!</a>
+    <div class="collapse" id="collapsediv2">
+      <div class="card card-body">
+        <div class="row justify-content-md-center">
+          <pre class="lead col-md-offset-2 col-md-8 text-left"><code>T:Kimegy a Magvető
+M:2/4
+L:1/8
+C:Túrmezei Erzsébet
+O:Népdal
+K:F
+FF C2 | FF F2 | 
+w:Ki-megy a Mag-ve-tő, 
+FF G2 | AG F2 |
+w:Hin-ti szét a ma-got,
+BA G2 | GG c2 | 
+w:A-rany-ló ma-gocs-kák, 
+BA G2 | AG F2 |]
+w:Jó föld-be hull-ja-tok!
+W:<abbr title="Nézd, milyen szépen helyezi el a kotta-megjelenítő a beírt versszak-számot!">2.</abbr>Ne útfél fogadjon,
+W:Hol rátok taposnak,
+W:S éhesen kapnak fel
+W:Károgó madarak.</code></pre>
+        </div>
+      </div>
+    </div>
+  </p>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-eye-open" style="margin-right: 6px;"></span>Neked is eszedbe jutott?
+      <ul>
+          <li class="lead"><p class="lead">Néha előfordul, hogy a hangkötések miatt nem minden hangjegy alá kerül szöveg a kottában. Például:</p></li>
+          <!-- EÉ385 -->
+          <div class="abc-source 16 1.2" align="center">
+            M:4/4
+            L:1/4
+            Q:1/4=90
+            K:D
+            %%player_right
+            %%MIDI program 21
+            (B,/C/) | D D E (D/C/) | B,2 !shortphrase!B, (D/E/) | 
+            w: Sze-*líd sze-med, Úr* Jé-zus, Jól* 
+            F F B (A/B/) | F E F |]
+            w: lát-ja min-den* vét-ke-met;
+            %w: Sze-líd sze-med, Úr Jé-zus, Jól lát-ja min-den vét-ke-met;
+          </div>
+          <p class="lead">Ilyenkor tehetünk a szövegbe egy csillagot, ami azt jelenti, hogy a következő hang alá nem kell szöveget írni. Egy hosszú hajlításnál akár több csillagot is írhatunk egymás után. Ebben a példában tehát:</p>
+          <div class="row justify-content-md-center">
+            <pre class="lead col-md-offset-2 col-md-8 text-left"><code>M:4/4
+L:1/4
+K:D
+(B,/C/) | D D E (D/C/) | B,2 !shortphrase!B, (D/E/) | 
+w: Sze-*líd sze-med, Úr* Jé-zus, Jól* 
+F F B (A/B/) | F E F |]
+w: lát-ja min-den* vét-ke-met;</code></pre>
+          </div>
+          <p class="lead"><a class="btn btn-primary" data-toggle="collapse" href="#collapsediv3">Ha nem tennénk ki a csillagokat, ezt kapnánk.</a>
+            <div class="collapse" id="collapsediv3">
+              <div class="card card-body">
+                <div class="row justify-content-md-center">
+                  <div class="abc-source 16 1.2" align="center">
+                    M:4/4
+                    L:1/4
+                    Q:1/4=90
+                    K:D
+                    %%no_player
+                    (B,/C/) | D D E (D/C/) | B,2 !shortphrase!B, (D/E/) | 
+                    w: Sze-líd sze-med, Úr Jé-zus, Jól 
+                    F F B (A/B/) | F E F |]
+                    w: lát-ja min-den vét-ke-met;
+                  </div>
+                </div>
+              </div>
+            </div></p>
+          <li class="lead">Nagy ritkán az ellenkezőre is van példa! Két szó szerepel egy hang alatt:</li>
+          <!-- EÉ556 -->
+          <div class="abc-source 16 1.2" align="center">
+            M:
+            L:1/4
+            Q:1/4=100
+            K:D
+            %%player_right
+            %%MIDI program 1
+            z F F F | G3 F | E B G E | F3 z |]
+            w: Mond-hat-juk: nem, s~ha úgy van, azt: i-gen.
+          </div>
+          <p class="lead">Ebben az esetben a két szó közé szóköz helyett hullámvonalat teszünk („s~ha”).</p>
+      </ul>
+    </p>
+  </blockquote>
+  <!-- Alsó nav-->
+  <div class="row">
+    <div class="col-xs-12">
+      <hr />
+    </div>
+    <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
+      <a class="btn btn-default btn-block btn-lg" href="../1-10szoveg2/" role="button">
+      <span class="glyphicon glyphicon-backward" style="margin-right: 6px;"></span> Vissza 
+      </a>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <a class="btn btn-primary btn-block btn-lg" href="../1-11akkord/" role="button">
+      Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
+      </a>
+    </div>    
+  </div>
+</div> <!--container vege-->
+
+<script>
+    $ABC_UI.init();
+</script>
+</body>
+</html>

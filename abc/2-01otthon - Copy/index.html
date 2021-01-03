@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="hu">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jqBootstrapValidation.min.js"></script>
+    <!-- ABC-UI -->
+    <link rel="stylesheet" href="/css/music.min.css" />
+    <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <title>Hogyan használhatom az ABC jelölést a saját gépemen?</title>
+</head>
+<body>
+<div class="container"> <!-- Bootstrap container eleje-->
+  <div class="page-header">
+    <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Fájlkezelés, programismeret</h1>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%;">
+      <span class="sr-only">78% kész</span>
+    </div>
+  </div>
+  <h2 class="text-center">Hogyan használhatom az ABC jelölést a saját gépemen?</h2>
+  <p class="lead">
+  Legegyszerűbben egy egyszerű szövegszerkesztő program (pl. a Windowsba beépített Jegyzettömb) segítségével készíthetek ABC-s kottát a számítógépen. Próbáljuk ki:
+  </p>
+  <p class="lead">
+  <ul>
+    <li class="lead">Nyitok egy új fájlt a Jegyzettömbben, és elmentem <type>.abc</type> kiterjesztéssel.</li>
+    <li class="lead">Begépelem az ABC jelölést és elmentem.
+      <ul>
+        <li class="lead">Kötelező mezők a kotta fejlécében, kötelezően ebben a sorrendben:</li>
+        <div class="row justify-content-md-center">
+          <pre class="lead col-md-offset-2 col-md-8 text-left"><code>X: szabadon választott azonosító szám (index)
+T: cím (title)
+M: ütemmutató (meter)
+L: alapértelmezett hangérték (default note length)
+K: előjegyzés (key)</code></pre>
+        </div>
+        <li class="lead">Minden fejléc-mező külön sorban szerepel.</li>
+        <li class="lead">Az L és K sorok közé további opcionális mezők illeszthetők, pl. „Q: tempo” (lásd később), „C: szerző”, „O: forrás”, stb.</li>
+      </ul>
+    </li>
+    <li class="lead">Egy <type>.abc</type> fájl több kottát is tartalmazhat!
+      <ul>
+        <li class="lead">A kották indexe, tehát az X mezőben szereplő azonosító szám fájlon belül ne ismétlődjön!</li>
+        <li class="lead">Az egyes kották között (az X mezők előtt) az olvashatóság kedvéért hagyjunk egy-egy üres sort.</li>
+      </ul>
+    </li>
+    <li class="lead">Az <type>.abc</type> kiterjesztésű kotta-gyűjteményeket beszédes névvel látom el, és szükség szerint mappákba rendezem.</li>
+  </ul>
+  </p>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-pencil" style="margin-right: 6px;"></span>Gondold végig!
+      <ol start="51">
+        <li class="lead">Milyen szövegszerkesztő programokat ismersz? Melyiknek mi az előnye, hátránya?</li>
+        <li class="lead">Mi a különbség a karakteres és a bináris fájlformátumok között? Tudsz példát mondani mindkettőre?</li>
+        <li class="lead">Hogyan tudsz a legegyszerűbb módon egy egyszerű szöveges fájlt létrehozni?</li>
+        <li class="lead">Mi az, hogy karakterkódolás? Mire vonatkozhat? Hogyan lehet megnézni, átállítani?</li>
+        <li class="lead">Hogyan tudsz egy szöveges fájlban keresni?</li>
+        <li class="lead">Hogyan tudsz egy szöveges fájlban szövegrészeket kicserélni?</li>
+        <li class="lead">Hogyan lehet mappákat és fájlokat létrehozni, másolni, mozgatni, törölni?</li>
+      </ol>
+    </p>
+  </blockquote>
+  <p class="lead">
+    Kotta nyomtatásához, zene lejátszásához célszoftvert kell indítanunk, pl. az ABCexplorert. A továbbiakban ezzel a programmal fogunk megismerkedni.
+  </p>
+  <!-- Alsó nav-->
+  <div class="row">
+    <div class="col-xs-12">
+      <hr />
+    </div>
+    <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
+      <a class="btn btn-default btn-block btn-lg" href="../1-12osszefoglalas3/" role="button">
+      <span class="glyphicon glyphicon-backward" style="margin-right: 6px;"></span> Vissza 
+      </a>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <a class="btn btn-primary btn-block btn-lg" href="../2-02nyitokepernyo/" role="button">
+      Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
+      </a>
+    </div>
+  </div>
+</div> <!--container vege-->
+
+<script>
+    $ABC_UI.init();
+</script>
+</body>
+</html>

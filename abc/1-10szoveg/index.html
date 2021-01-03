@@ -12,7 +12,7 @@
     <!-- ABC-UI -->
     <link rel="stylesheet" href="/css/music.min.css" />
     <script src="/js/abc-ui-1.0.0.min.js"></script>
-    <title>Címés egyéb szövegmezők</title>
+    <title>Cím, szerző, zeneszöveg</title>
 </head>
 <body>
 <div class="container"> <!-- Bootstrap container eleje-->
@@ -24,57 +24,41 @@
       <span class="sr-only">60% kész</span>
     </div>
   </div>
-  <h2 class="text-center">Cím és egyéb szövegmezők</h2>
+  <h2 class="text-center">Cím, szerző, zeneszöveg</h2>
   <p class="lead">Már csak néhány szövegmező hiányzik, hogy a kottánk teljes legyen!</p> 
-   <p class="lead">A dalunk <em>cím</em>ét az ABC kód fejlécébe tudjuk beírni „T:Cím” alakban.</p>
-  <p class="lead">A dalszöveg  (dallam alá tördelve és folytonosan)</p>
-  <p class="lead">Egyéb feliratok, akkordok</p>
-
-  <blockquote class="blockquote">
-    <p class="lead">
-      <span class="glyphicon glyphicon-pencil" style="margin-right: 6px;"></span> Jegyezzük le az alábbi dallamokat! 
-      <ol start="7">
-        <li class="lead"></li>
-      </ol>
-      <!-- EÉ -->
-<!--      <div class="abc-source 16 1.2" align="center">
-        M:2/2
-        L:1/2
-        Q:1/4=120
-        K:C
-        %%player_right
-        %%MIDI program 25
-         |]
-      </div>-->
-      <!-- EÉ553 -->
-      <div class="abc-source 16 1.2" align="center">
-        M:2/2
-        L:1/4
-        Q:1/4=100
-        K:G
-        %%player_right
-        %%MIDI program 24
-        "G"B B A B | "e"A<'G-G2 | "a"A<'A B c | "D"A3 z |]
-        w: Ál-dá-sod-dal megy-ünk, | megy-ünk in-nen el. 
-      </div>
-      <!-- EÉ560 -->
-      <div class="abc-source 16 1.2" align="center">
-        M:2/4
-        L:1/8
-        Q:1/8=100
-        K:F
-        %%player_right
-        %%MIDI program 24
-        "d"z D DD | "a"E2 E2-|"C"E E [1 DC | "d"D4 :|[2 "C7"DE | "F"F4 |]
-        w: In-dulj az ú-ton, *e-lő-re nézz,
-        w: Nem tán-to-rít-hat *e-***zer-nyi vész.
-        z F GA | "B"B2 B2-| "C7"BB AG | "F"B2 A2 |
-        w:É-le-ted út-ját *vé-gig kell jár-ni,
-        "B"z D DD | "a"E2 E2-| "C"EE DC | "d"D2 D2 |]
-        w:És az út vé-gén *Jé-zus fog vár-ni!
-      </div>
-    </p>
-  </blockquote>
+   <p class="lead">Az ABC kód fejlécében megadhatjuk a dal <em>címét</em> („T:Cím”), <em>szerzőjét</em> („C:Szerző”), <em>forrását</em> („O:Forrás”).</p>
+  <p class="lead">A <em>dalszöveget</em> kétféleképpen tudjuk lejegyezni. Az egyszerűbb mód, ha a szöveg a kotta után következik, így:</p>
+  <div class="abc-source 16 1.2" align="center">
+    T:Kimegy a Magvető
+    M:2/4
+    L:1/8
+    Q:1/8=110
+    C:Túrmezei Erzsébet
+    O:Népdal
+    K:F
+    %%player_right
+    %%MIDI program 4
+    FF C2 | FF F2 | FF G2 | AG F2 |
+    BA G2 | GG c2 | BA G2 | AG F2 |]
+    W: Kimegy a Magvető, Hinti szét a magot,
+    W:Aranyló magocskák, Jó földbe hulljatok!
+    %W:2. Ne útfél fogadjon, Hol rátok taposnak,
+    %W:S éhesen kapnak fel Károgó madarak.
+  </div>
+  <p></p>
+  <p class="lead">Ezt úgy tudjuk elérni, hogy „W:Szöveg” sorokat helyezünk el bárhol az ABC kódban (mondjuk a végén):</p>
+  <div class="row justify-content-md-center">
+    <pre class="lead col-md-offset-2 col-md-8 text-left"><code>T:Kimegy a Magvető
+M:2/4
+L:1/8
+C:Túrmezei Erzsébet
+O:Népdal
+K:F
+FF C2 | FF F2 | FF G2 | AG F2 | 
+BA G2 | GG c2 | BA G2 | AG F2 |]
+<abbr title="Ha akarok, tehetek szóközt, ...">W: </abbr>Kimegy a Magvető, Hinti szét a magot, 
+<abbr title="de nem muszáj.">W:</abbr>Aranyló magocskák, Jó földbe hulljatok!</code></pre>
+  </div>
   <!-- Alsó nav-->
   <div class="row">
     <div class="col-xs-12">
@@ -86,7 +70,7 @@
       </a>
     </div>
     <div class="col-xs-12 col-md-3">
-      <a class="btn btn-primary btn-block btn-lg" href="../2-01otthon/" role="button">
+      <a class="btn btn-primary btn-block btn-lg" href="../1-10szoveg2/" role="button">
       Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
       </a>
     </div>    

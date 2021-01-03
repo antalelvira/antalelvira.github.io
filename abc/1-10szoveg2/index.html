@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="hu">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jqBootstrapValidation.min.js"></script>
+    <!-- ABC-UI -->
+    <link rel="stylesheet" href="/css/music.min.css" />
+    <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <title>Zeneszöveg (folytatás)</title>
+</head>
+<body>
+<div class="container"> <!-- Bootstrap container eleje-->
+  <div class="page-header">
+    <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Az ABC jelölés</h1>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: 62%;">
+      <span class="sr-only">62% kész</span>
+    </div>
+  </div>
+  <h2 class="text-center">Zeneszöveg (folytatás)</h2>
+  <p class="lead">Talán egy kicsit könnyebben követkető, ha a szöveget a hangok alá tördeljük: </p>
+  <div class="abc-source 16 1.2" align="center">
+    T:Kimegy a Magvető
+    M:2/4
+    L:1/8
+    Q:1/8=110
+    C:Túrmezei Erzsébet
+    O:Népdal
+    K:F
+    %%player_right
+    %%no_player
+    FF C2 | FF F2 | 
+    w: Ki-megy a Mag-ve-tő, 
+    FF G2 | AG F2 |
+    w: Hin-ti szét a ma-got,
+    BA G2 | GG c2 | 
+    w: A-rany-ló ma-gocs-kák, 
+    BA G2 | AG F2 |]
+    w: Jó föld-be hull-ja-tok!
+    %W:2. Ne útfél fogadjon, Hol rátok taposnak,
+    %W:S éhesen kapnak fel Károgó madarak.
+  </div>
+  <p class="lead">Ilyenkor a kód törzsébe, közvetlenül az egyes dallamsorok alá írjuk be a „w:Szöveg” sorainkat.</p>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-exclamation-sign" style="margin-right: 6px;"></span>Két dologra figyeljünk:
+      <ol>
+        <li class="lead">Nagy W helyett ilyenkor kis w-t kell írni a sor elejére!</li>
+        <li class="lead">A szöveget kötőjeles szótagolással tudjuk a hangok alá tördelni.</li>
+      </ol>
+    </p>
+  </blockquote>
+  <p class="lead">Lássuk a kódot:</p>
+  <div class="row justify-content-md-center">
+    <pre class="lead col-md-offset-2 col-md-8 text-left"><code>T:Kimegy a Magvető
+M:2/4
+L:1/8
+C:Túrmezei Erzsébet
+O:Népdal
+K:F
+FF C2 | FF F2 | 
+w: Ki-megy a Mag-ve-tő, 
+FF G2 | AG F2 |
+w: Hin-ti szét a ma-got,
+BA G2 | GG c2 | 
+w: A-rany-ló ma-gocs-kák, 
+BA G2 | AG F2 |]
+w: Jó föld-be hull-ja-tok!</code></pre>
+  </div>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-eye-open" style="margin-right: 6px;"></span>Észrevetted?
+      <ul>
+          <li class="lead">Hosszú soroknál automatikusan is új sort kezd a kotta-megjelenítő program, de ha akarok, az ABC kódba tett sortöréssel én is új sort kezdhetek.</li>
+      </ul>
+    </p>
+  </blockquote>
+  <!-- Alsó nav-->
+  <div class="row">
+    <div class="col-xs-12">
+      <hr />
+    </div>
+    <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
+      <a class="btn btn-default btn-block btn-lg" href="../1-10szoveg/" role="button">
+      <span class="glyphicon glyphicon-backward" style="margin-right: 6px;"></span> Vissza 
+      </a>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <a class="btn btn-primary btn-block btn-lg" href="../1-10szoveg3/" role="button">
+      Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
+      </a>
+    </div>    
+  </div>
+</div> <!--container vege-->
+
+<script>
+    $ABC_UI.init();
+</script>
+</body>
+</html>
