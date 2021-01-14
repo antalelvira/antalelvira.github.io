@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/abc/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/abc/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/abc/images/favicon-16x16.png" />
+    <link rel="manifest" href="/abc/images/site.webmanifest" />
+    <link rel="mask-icon" href="/abc/images/safari-pinned-tab.svg" color="#6a83b9" />
+    <link rel="shortcut icon" href="/abc/images/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#6a83b9" />
+    <meta name="msapplication-config" content="/abc/images/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <script src="/js/jquery.min.js"></script>
@@ -12,6 +22,7 @@
     <!-- ABC-UI -->
     <link rel="stylesheet" href="/css/music.min.css" />
     <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <link rel="stylesheet" href="/css/spec.css" />
     <title>Miből áll a kotta? - Hangérték</title>
 </head>
 <body>
@@ -60,24 +71,30 @@
     </p>
   </blockquote>
 
-  <p class="lead">Akkor most ugyanazt többféleképpen is írhatom? Igen! 
-    A fenti kóddal egyenértékű például a két következő:</p>
-    <div class="row justify-content-md-center">
-    <pre class="lead col-md-offset-2 col-md-8 col-md-offset-2 text-center">
-      <code class="left">M:4/4</code>
-      <code class="left">L:1/8</code>
-      <code class="left">A8 | A4 A4 | A2 A2 A2A2 | 
-        A AA A AAAA | 
-        A/ A/ A/A/ A/ A/A/A/ A/A/A/A/ A/A/A/A/ |</code>
-    </pre>
-    <pre class="lead col-md-offset-2 col-md-8 text-center">
-      <code class="left">M:4/4</code>
-      <code class="left">L:1/16</code>
-      <code class="left">A16 | A8 A8 | A4 A4 A4A4 | 
-        A2 A2A2 A2 A2A2A2A2 | 
-        A A AA A AAA AAAA AAAA |</code>
-    </pre>
-    </div>
+  <p class="lead">Akkor most ugyanazt többféleképpen is írhatom?
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapsediv">Igen!<span class="glyphicon glyphicon-chevron-down" style="margin-left: 12px;"></span></a>
+    <div class="collapse" id="collapsediv">
+      <div class="card card-body">
+        <p class="lead">A fenti kóddal egyenértékű például a két következő:</p>
+        <div class="row justify-content-md-center">
+          <pre class="lead col-md-offset-2 col-md-8 col-md-offset-2 text-center">
+            <code class="left">M:4/4</code>
+            <code class="left">L:1/8</code>
+            <code class="left">A8 | A4 A4 | A2 A2 A2A2 | 
+              A AA A AAAA | 
+              A/ A/ A/A/ A/ A/A/A/ A/A/A/A/ A/A/A/A/ |</code>
+          </pre>
+          <pre class="lead col-md-offset-2 col-md-8 text-center">
+            <code class="left">M:4/4</code>
+            <code class="left">L:1/16</code>
+            <code class="left">A16 | A8 A8 | A4 A4 A4A4 | 
+              A2 A2A2 A2 A2A2A2A2 | 
+              A A AA A AAA AAAA AAAA |</code>
+          </pre>
+        </div>
+      </div>
+    </div>   
+  </p>
   <p class="lead">Észrevetted, hogy a szóközök is számítanak? Ha nem teszünk szóközt az egymást követő nyolcadok, vagy tizenhatodok közé, akkor azok össze lesznek kötve.</p>
 
   <p class="lead">Végülis hány hang fér egy ütembe?

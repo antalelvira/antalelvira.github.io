@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/abc/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/abc/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/abc/images/favicon-16x16.png" />
+    <link rel="manifest" href="/abc/images/site.webmanifest" />
+    <link rel="mask-icon" href="/abc/images/safari-pinned-tab.svg" color="#6a83b9" />
+    <link rel="shortcut icon" href="/abc/images/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#6a83b9" />
+    <meta name="msapplication-config" content="/abc/images/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <script src="/js/jquery.min.js"></script>
@@ -12,6 +22,8 @@
     <!-- ABC-UI -->
     <link rel="stylesheet" href="/css/music.min.css" />
     <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <link rel="stylesheet" href="/css/spec.css" />
+    <script src="/js/spec.js"></script>
     <title>Összefoglaló feladatok (folytatás)</title>
 </head>
 <body>
@@ -51,6 +63,18 @@
         (F/G/) (A/F/) B D | EG (GF) || (B/A/ B/F/ G/A/) (B/c/) | (BA) B2 |]
         w: Há-*la* né-ked, Is-te-nünk!* Hal-*****le-*lu-*ja!
       </div>
+      <form class="form-inline" onsubmit="renderSolution('inputSol46', 'renderSol46', '%%no_player')">
+        <div class="form-row" align="center">
+          <label for="inputSol46" style="font-weight:100;">Megoldás:</label>
+          <div class="input-group col-xs-8">
+            <textarea class="form-control" id="inputSol46" rows="5" placeholder="ABC jelölés"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Ellenőrzés</button>
+        </div>
+      </form>
+      <div id="renderSol46" name="renderSol46" class="abc-source 16 1.2" align="center">
+        %%no_player
+      </div>
       <ol start="47">
         <li class="lead"></li>
       </ol>
@@ -77,6 +101,18 @@
         Bc dF | E2 D2 |]
         w:Kö-szö-ne-tet mon-dunk.
       </div>
+      <form class="form-inline" onsubmit="renderSolution('inputSol47', 'renderSol47', '%%no_player')">
+        <div class="form-row" align="center">
+          <label for="inputSol47" style="font-weight:100;">Megoldás:</label>
+          <div class="input-group col-xs-8">
+            <textarea class="form-control" id="inputSol47" rows="5" placeholder="ABC jelölés"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Ellenőrzés</button>
+        </div>
+      </form>
+      <div id="renderSol47" name="renderSol47" class="abc-source 16 1.2" align="center">
+        %%no_player
+      </div>
       <ol start="48">
         <li class="lead"></li>
       </ol>
@@ -99,6 +135,18 @@
         "G"G2 GF "A"E2 FG | "D"F2 FE "h"FE !shortphrase!D2 | "E"E2 ED "A"C2 DE | "D"D4 z2 |]
         w:La-la-
       </div>
+      <form class="form-inline" onsubmit="renderSolution('inputSol48', 'renderSol48', '%%no_player')">
+        <div class="form-row" align="center">
+          <label for="inputSol48" style="font-weight:100;">Megoldás:</label>
+          <div class="input-group col-xs-8">
+            <textarea class="form-control" id="inputSol48" rows="5" placeholder="ABC jelölés"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Ellenőrzés</button>
+        </div>
+      </form>
+      <div id="renderSol48" name="renderSol48" class="abc-source 16 1.2" align="center">
+        %%no_player
+      </div>
       <ol start="49">
         <li class="lead"></li>
       </ol>
@@ -119,6 +167,18 @@
         "B"z D DD | "a"E2 E2-| "C"EE DC | "d"D2 D2 |]
         w:És az út vé-gén *Jé-zus fog vár-ni!
       </div>
+      <form class="form-inline" onsubmit="renderSolution('inputSol49', 'renderSol49', '%%no_player')">
+        <div class="form-row" align="center">
+          <label for="inputSol49" style="font-weight:100;">Megoldás:</label>
+          <div class="input-group col-xs-8">
+            <textarea class="form-control" id="inputSol49" rows="5" placeholder="ABC jelölés"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Ellenőrzés</button>
+        </div>
+      </form>
+      <div id="renderSol49" name="renderSol49" class="abc-source 16 1.2" align="center">
+        %%no_player
+      </div>
       <ol start="50">
         <li class="lead"></li>
       </ol>
@@ -134,18 +194,30 @@
         %%MIDI program 66
         "D"d2 d | "G"B2 B3 d2 B | "D"A2 A3 
         w:Min-dig ál-dom hű Meg-vál-tóm,
-        B2 A | "h"FE D3 "A"x/64 E2 F | "D"D4-D 
+        B2 A | "h"FE D3 "A"x/16 E2 F | "D"D4-D 
         w:Lel-ke ve-ze-ti szí-ve-met.*
         d dd | "G"B2 B3 d2 B | "D"A2 A3
         w:Min-den-nap ál-dom hű Meg-vál-tóm,
-        B2 A | "h"FE D3 "A"x/64 E2 F | "D"D4-D
+        B2 A | "h"FE D3 "A"x/16 E2 F | "D"D4-D
         w:Lel-ke ve-ze-ti szí-ve-met. 
         |: A, B,D | "D"F2 F3 B,2 D | "h"F4-F
         w:A hegy-re ment fel, ott be-szélt,
         w:A sza-va iz-zik, mint a nap,
-           A, B,D | "fis"A2 F3 "A"x/64 F  EF | "D"D4-D :|
+           A, B,D | "fis"A2 F3 "A"x/16 F  EF | "D"D4-D :|
         w:Min-den-ki hall-ja ü-ze-ne-tét!
         w: Tü-zé-vel en-gem meg-tisz-to-gat.
+      </div>
+      <form class="form-inline" onsubmit="renderSolution('inputSol50', 'renderSol50', '%%no_player')">
+        <div class="form-row" align="center">
+          <label for="inputSol50" style="font-weight:100;">Megoldás:</label>
+          <div class="input-group col-xs-8">
+            <textarea class="form-control" id="inputSol50" rows="5" placeholder="ABC jelölés"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Ellenőrzés</button>
+        </div>
+      </form>
+      <div id="renderSol50" name="renderSol50" class="abc-source 16 1.2" align="center">
+        %%no_player
       </div>
     </p>
   </blockquote>

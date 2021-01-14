@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/abc/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/abc/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/abc/images/favicon-16x16.png" />
+    <link rel="manifest" href="/abc/images/site.webmanifest" />
+    <link rel="mask-icon" href="/abc/images/safari-pinned-tab.svg" color="#6a83b9" />
+    <link rel="shortcut icon" href="/abc/images/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#6a83b9" />
+    <meta name="msapplication-config" content="/abc/images/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />  
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <script src="/js/jquery.min.js"></script>
@@ -12,6 +22,8 @@
     <!-- ABC-UI -->
     <link rel="stylesheet" href="/css/music.min.css" />
     <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <link rel="stylesheet" href="/css/spec.css" />
+    <script src="/js/spec.js"></script>
     <title>Miből áll a kotta? - Hangérték (folytatás)</title>
 </head>
 <body>
@@ -69,6 +81,18 @@
         %%MIDI program 25
         D2 DE F2 E2 | DD AA G4 | A2 GF E2 C2 | DE FG E4 |]
       </div>
+      <form class="form-inline" onsubmit="renderSolution('inputSol7', 'renderSol7', '%%no_player')">
+        <div class="form-row" align="center">
+          <label for="inputSol" style="font-weight:100;">Megoldás:</label>
+          <div class="input-group col-xs-8">
+            <textarea class="form-control" id="inputSol7" rows="3" placeholder="ABC jelölés"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Ellenőrzés</button>
+        </div>
+      </form>
+      <div id="renderSol7" name="renderSol7" class="abc-source 16 1.2" align="center">
+        %%no_player
+      </div>
       <ol start="8">
         <li></li>
       </ol>
@@ -81,6 +105,18 @@
         %%player_right
         %%MIDI program 25
         B3 G G4 | c3 G G4 | z2 BA G4 | A3 B A4 |]
+      </div>
+      <form class="form-inline" onsubmit="renderSolution('inputSol8', 'renderSol8', '%%no_player')">
+        <div class="form-row" align="center">
+          <label for="inputSol" style="font-weight:100;">Megoldás:</label>
+          <div class="input-group col-xs-8">
+            <textarea class="form-control" id="inputSol8" rows="3" placeholder="ABC jelölés"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Ellenőrzés</button>
+        </div>
+      </form>
+      <div id="renderSol8" name="renderSol8" class="abc-source 16 1.2" align="center">
+        %%no_player
       </div>
     </p>
   </blockquote>

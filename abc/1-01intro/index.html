@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/abc/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/abc/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/abc/images/favicon-16x16.png" />
+    <link rel="manifest" href="/abc/images/site.webmanifest" />
+    <link rel="mask-icon" href="/abc/images/safari-pinned-tab.svg" color="#6a83b9" />
+    <link rel="shortcut icon" href="/abc/images/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#6a83b9" />
+    <meta name="msapplication-config" content="/abc/images/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <script src="/js/jquery.min.js"></script>
@@ -12,6 +22,7 @@
     <!-- ABC-UI -->
     <link rel="stylesheet" href="/css/music.min.css" />
     <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <link rel="stylesheet" href="/css/spec.css" />
     <title>Mi az az ABC jelölés?</title>
 </head>
 <body>
@@ -71,8 +82,8 @@
       <span class="glyphicon glyphicon-pencil" style="margin-right: 6px;"></span>Gondolkodjunk!
       <ol>
         <li class="lead">A fenti példában a PDF és a MIDI fájl mérete összességében hányszorosa az ABC formátumúnak?</li>
-        <li class="lead">Mit tudunk az MP3 és a WAV fájlformátumokról? Miben hasonlítanak, és miben különböznek? Melyiket mire érdemes használni?</li>
-        <li class="lead">Mit tudunk a BMP, a JPEG, és a PNG fájlformátumokról? Miben hasonlítanak, és miben különböznek? Melyiket mire érdemes használni?</li>
+        <li class="lead">Mit tudunk az MP3 és a WAV fájlformátumokról? Miben hasonlítanak és miben különböznek? Melyiket mire érdemes használni?</li>
+        <li class="lead">Mit tudunk a BMP, a JPEG és a PNG fájlformátumokról? Miben hasonlítanak és miben különböznek? Melyiket mire érdemes használni?</li>
         <li class="lead">Miért lehet előnyös a kottát PNG helyett PDF-ben tárolni?</li>
       </ol>
     </p>
@@ -103,7 +114,7 @@
         </div>
         <div class="modal-body">
           <p class="text-center lead">
-            Szinte minden kottarészlet jobb oldalán szerepel egy <img src="/images/play.png" class="text-center"/> lejátszás gomb. Erre kattintva a kotta megelevenedik.</p>
+            Szinte minden kottarészlet jobb oldalán szerepel egy <img src="/abc/images/play.png" class="text-center"/> lejátszás gomb. Erre kattintva a kotta megelevenedik.</p>
             <blockquote class="blockquote">
               <p class="lead">
                 <span class="glyphicon glyphicon-exclamation-sign" style="margin-right: 6px;"></span>Vegyük észre! Itt valami fontos észrevétel következik. 
@@ -124,6 +135,13 @@
               <pre class="lead col-md-offset-2 col-md-8 text-center"><code class="lead left"><abbr title="Ez itt a kiegészítő magyarázat.">ABC</abbr>D EF G</code></pre>
             </div>
             <p class="lead">Az aláhúzott szövegrészekhez kiegészítő magyarázat is tartozik. Vidd fölé a kurzort!</p>
+            <p class="lead">Ezekre a gombokra kattints rá! <a class="btn btn-primary" data-toggle="collapse" href="#collapsediv"><span class="glyphicon glyphicon-chevron-down"></span></a></p>
+            <div class="collapse" id="collapsediv">
+              <ul>
+                <li class="lead">Egy-egy feladat megoldása, vagy kiegészítő magyarázat bújik meg mögöttük.</li>
+              </ul>
+            </li>
+            </div>
           </p>
         </div>
         <div class="modal-footer">

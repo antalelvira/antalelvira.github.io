@@ -1,0 +1,70 @@
+#screenpic {
+	position: relative;
+	width: 100%;
+	padding-bottom: 54%;
+	vertical-align: middle;
+	margin: 0;
+    overflow: hidden;
+}
+#screenpic svg { 
+	display: inline-block;
+	position: absolute;
+	top: 0; left: 0;
+}
+/*rect {
+    transition: 0.5s fill;
+    fill: black;
+    opacity: 0.2;*/
+    /*background: url("/images/play.png") no-repeat fixed center;*/
+/*}*/
+rect.blank {
+    fill:black;
+    opacity: 0.3;
+    cursor: default;
+}
+rect.blank:hover, rect.blank:focus {
+    cursor: default;
+}
+g rect {
+    transition: 0.5s fill;
+    fill: black;
+    opacity: 0.2;
+}
+g:hover rect{
+    fill: gray;
+    opacity: 0;
+}
+/*a:hover + g rect, a:focus + g rect {
+    fill: gray;
+    opacity: 0;
+}*/
+.special circle {
+    visibility: hidden; 
+}
+circle { 
+    stroke: #22aa22;
+    stroke-opacity: 0.8;
+    stroke-width: 16;
+    fill: #a4e7a4;
+    fill-opacity: 0.7;
+    pointer-events: all;
+}
+rect:hover, rect:focus {
+    cursor: pointer;
+}
+/*rect:hover, rect:focus { 
+}*/
+g text {
+    opacity: 0;
+    font-size: 1.7em; 
+}
+g:hover text, g:focus text { 
+    opacity: 1;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    font-style: oblique;
+}
+/*@media all and (max-width: 100px) {
+	svg text, svg tspan { opacity: 1; font-size: 14px; }
+}*/

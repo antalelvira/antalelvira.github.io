@@ -1,2 +1,0 @@
-Egy felülíró css-el, a display-t none-ra állítva a div#abc-render0, abc-render1, stb. elemekre, a kotta nem fog megjelenni.
-A felhasználó által beírt abc kódot pedig JavaScripttel fel tudom dolgozni, és lejátszani.

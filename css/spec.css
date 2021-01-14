@@ -1,0 +1,20 @@
+table .hoverbody {
+  width: 100%;
+  text-align: center;
+}
+.hoverbody th {
+  height: 2em;
+  text-align: center;
+}
+.hoverbody th, .hoverbody td {
+  width: 25%;
+}
+.hoverbody tr:hover {
+  background-color: #f5f5f5;
+}
+div[id^=renderSol] svg {
+    color: gray;
+}
+label[for^=inputSol] {
+    color: gray;
+}

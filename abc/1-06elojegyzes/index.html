@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/abc/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/abc/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/abc/images/favicon-16x16.png" />
+    <link rel="manifest" href="/abc/images/site.webmanifest" />
+    <link rel="mask-icon" href="/abc/images/safari-pinned-tab.svg" color="#6a83b9" />
+    <link rel="shortcut icon" href="/abc/images/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#6a83b9" />
+    <meta name="msapplication-config" content="/abc/images/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <script src="/js/jquery.min.js"></script>
@@ -12,22 +22,8 @@
     <!-- ABC-UI -->
     <link rel="stylesheet" href="/css/music.min.css" />
     <script src="/js/abc-ui-1.0.0.min.js"></script>
-    <style>
-      table {
-        width: 100%;
-        text-align: center;
-      }
-      th {
-        height: 2em;
-        text-align: center;
-      }
-      th, td {
-        width: 25%;
-      }
-      tbody tr:hover {
-        background-color: #f5f5f5;
-      }
-    </style>
+    <link rel="stylesheet" href="/css/spec.css" />
+    <script src="/js/spec.js"></script>
     <title>Miből áll a kotta? - Előjegyzés</title>
 </head>
 <body>
@@ -53,7 +49,7 @@
     <span class="glyphicon glyphicon-exclamation-sign" style="margin-right: 6px;"></span> A kvintoszlop
     <ul>
       <table style="width:90%;">
-      <thead>
+      <thead class="hoverbody">
         <tr>
           <th style="width:12%;">Előjegyzés</th>
           <th style="width:37%;">Módosított hangok</th>
@@ -61,7 +57,7 @@
           <th style="width:35%;">ABC jelölés</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="hoverbody">
         <tr>
           <td>&#x266f;&#x266f;&#x266f;&#x266f;&#x266f;&#x266f;&#x266f;</td>
           <td>fisz, cisz, gisz, disz, aisz, eisz, hisz</td>
@@ -214,6 +210,18 @@ G <abbr title="&#x266f;&#x266f; F = x F">^^F</abbr> | F =F |</code></pre>
         %%MIDI program 21
         F | B^A Bc | F2 F D | F^G AG | F3 |]
       </div>
+      <form class="form-inline" onsubmit="renderSolution('inputSol18', 'renderSol18', '%%no_player')">
+        <div class="form-row" align="center">
+          <label for="inputSol" style="font-weight:100;">Megoldás:</label>
+          <div class="input-group col-xs-8">
+            <textarea class="form-control" id="inputSol18" rows="3" placeholder="ABC jelölés"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Ellenőrzés</button>
+        </div>
+      </form>
+      <div id="renderSol18" name="renderSol18" class="abc-source 16 1.2" align="center">
+        %%no_player
+      </div>
       <ol start="19">
         <li class="lead"></li>
       </ol>
@@ -226,6 +234,18 @@ G <abbr title="&#x266f;&#x266f; F = x F">^^F</abbr> | F =F |</code></pre>
         %%player_right
         %%MIDI program 21
         G | AG FE | E^D E2 c2 | B2 A2 | G3 |]
+      </div>
+      <form class="form-inline" onsubmit="renderSolution('inputSol19', 'renderSol19', '%%no_player')">
+        <div class="form-row" align="center">
+          <label for="inputSol" style="font-weight:100;">Megoldás:</label>
+          <div class="input-group col-xs-8">
+            <textarea class="form-control" id="inputSol19" rows="3" placeholder="ABC jelölés"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Ellenőrzés</button>
+        </div>
+      </form>
+      <div id="renderSol19" name="renderSol19" class="abc-source 16 1.2" align="center">
+        %%no_player
       </div>
       <ol start="20">
         <li class="lead"></li>
@@ -240,6 +260,18 @@ G <abbr title="&#x266f;&#x266f; F = x F">^^F</abbr> | F =F |</code></pre>
         %%MIDI program 21
         CG B/_A/G | FE D2 C2 | c=B cd | c_B A2 G2 |]
       </div>
+      <form class="form-inline" onsubmit="renderSolution('inputSol20', 'renderSol20', '%%no_player')">
+        <div class="form-row" align="center">
+          <label for="inputSol" style="font-weight:100;">Megoldás:</label>
+          <div class="input-group col-xs-8">
+            <textarea class="form-control" id="inputSol20" rows="3" placeholder="ABC jelölés"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Ellenőrzés</button>
+        </div>
+      </form>
+      <div id="renderSol20" name="renderSol20" class="abc-source 16 1.2" align="center">
+        %%no_player
+      </div>
       <ol start="21">
         <li class="lead"></li>
       </ol>
@@ -253,6 +285,18 @@ G <abbr title="&#x266f;&#x266f; F = x F">^^F</abbr> | F =F |</code></pre>
         %%MIDI program 21
         c=B cd c2 G2 | cA AA G2 G2 |]
       </div>
+      <form class="form-inline" onsubmit="renderSolution('inputSol21', 'renderSol21', '%%no_player')">
+        <div class="form-row" align="center">
+          <label for="inputSol" style="font-weight:100;">Megoldás:</label>
+          <div class="input-group col-xs-8">
+            <textarea class="form-control" id="inputSol21" rows="3" placeholder="ABC jelölés"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Ellenőrzés</button>
+        </div>
+      </form>
+      <div id="renderSol21" name="renderSol21" class="abc-source 16 1.2" align="center">
+        %%no_player
+      </div>
       <ol start="22">
         <li class="lead"></li>
       </ol>
@@ -265,6 +309,18 @@ G <abbr title="&#x266f;&#x266f; F = x F">^^F</abbr> | F =F |</code></pre>
         %%player_right
         %%MIDI program 21
         C =D=E | F3 G BA GF | =E2 F2 z |]
+      </div>
+      <form class="form-inline" onsubmit="renderSolution('inputSol22', 'renderSol22', '%%no_player')">
+        <div class="form-row" align="center">
+          <label for="inputSol" style="font-weight:100;">Megoldás:</label>
+          <div class="input-group col-xs-8">
+            <textarea class="form-control" id="inputSol22" rows="3" placeholder="ABC jelölés"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Ellenőrzés</button>
+        </div>
+      </form>
+      <div id="renderSol22" name="renderSol22" class="abc-source 16 1.2" align="center">
+        %%no_player
       </div>
     </p>
   </blockquote>
