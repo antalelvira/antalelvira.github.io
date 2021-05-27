@@ -18,3 +18,9 @@ div[id^=renderSol] svg {
 label[for^=inputSol] {
     color: gray;
 }
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding-bottom: 1em;
+}

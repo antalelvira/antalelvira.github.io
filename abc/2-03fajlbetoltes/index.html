@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="hu">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/abc/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/abc/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/abc/images/favicon-16x16.png" />
+    <link rel="manifest" href="/abc/images/site.webmanifest" />
+    <link rel="mask-icon" href="/abc/images/safari-pinned-tab.svg" color="#6a83b9" />
+    <link rel="shortcut icon" href="/abc/images/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#6a83b9" />
+    <meta name="msapplication-config" content="/abc/images/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jqBootstrapValidation.min.js"></script>
+    <!-- ABC-UI -->
+    <link rel="stylesheet" href="/css/music.min.css" />
+    <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <link rel="stylesheet" href="/css/spec.css" />
+    <link rel="stylesheet" href="/css/spec2.css" />
+    <title>ABCexplorer - Nyitóképernyő</title>
+</head>
+<body>
+<div class="container"> <!-- Bootstrap container eleje-->
+  <div class="page-header">
+    <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Fájlkezelés, programismeret</h1>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+      <span class="sr-only">85% kész</span>
+    </div>
+  </div>
+  <h2 class="text-center">ABCexplorer - Fájl betöltése</h2>
+  <p class="lead">
+  A saját számítógépünkön létrehozott, vagy oda lementett <type>.abc</type> fájlokat így tudjuk használni:
+  </p>
+
+  <ul>
+    <span class="clearfix">
+    <img style="float:left" src="/abc/images/2-03megnyitas.png" alt="Fájl menü Helyi állomány megnyitása..."  width="399" height="229" >
+    <li class="lead" style="margin-left: 430px; padding-left: 0px;">Az ABCexplorer program <type>Fájl</type> menüjében a <type>Helyi állomány megnyitása...</type> menüpontra kattintunk, és megkeressük az <type>.abc</type> kiterjesztésű fájlt.</li>
+   </span>
+   <span class="clearfix">
+    <img style="float:right" src="/abc/images/2-03tartalom.png" alt="Tartalomjegyzék fájl megnyitása után"  width="400" height="248" >
+    <li class="lead">Az <type>Open</type> gombra kattintva a fájl, és a benne szereplő összes dallam megjelenik a képernyő bal oldalán található tartalomjegyzékben.</li>
+  </span>
+  <span class="clearfix">
+    <img style="float:left" src="/abc/images/2-03tartalom2.png" alt="Tartalomjegyzék több fájl megnyitása után"  width="400" height="314" > <span style="clear: right"></span>
+    <li class="lead" style="margin-left: 430px; padding-left: 0px;">Ha szeretnénk, az első két pont ismételgetésével több <type>.abc</type> fájlt is betölthetünk a memóriába. Ezek egymás alatt fognak megjelenni a tartalomjegyzékben.</li>
+  </span>
+    <!--<li class="lead">A tartalomjegyzékben a fájl neve előtti plusz/minusz jelre kattintva tudunk a részletesebb és a tömörebb megjelenítés között váltani.</li>-->
+  <span class="clearfix">
+    <img style="float:right" src="/abc/images/2-03bezaras.png" alt="Fájl bezárása a tartalomjegyzék helyi menüjéből"  width="400" height="314" > <span style="clear: right"></span>
+    <li class="lead">Ha valamelyik fájlt be szeretnénk zárni, akkor a tartalomjegyzékben kattintsunk a fájl nevére jobb egérgombbal, és az előugró menüből válasszuk a <type>Bezárás - állomány</type> menüpontot!</li>
+  </span>
+    <!--<li class="lead">A program alapértelmezés szerint megjegyzi, hogy melyik fájlokat nyitottuk meg. Tehát ha a programot bezárjuk, majd újraindítjuk (és menet közben nem töröltük az adott fájlokat), a tartalomjegyzékben újra megjelennek a korábban betöltött <type>.abc</type> fájlok.</li>-->
+  </ul>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-eye-open" style="margin-right: 6px;"></span>Vegyük észre!
+      <ul>
+          <li class="lead"><p class="lead">Az <type>.abc</type> fájlokra a program <em>állomány</em>ként hivatkozik.</p></li>
+      </ul>
+    </p>
+  </blockquote>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-pencil" style="margin-right: 6px;"></span>Próbáljuk ki!
+      <ol start="57">
+        <li class="lead">Töltsük le, és mentsük el a szokásos mentési helyünkre a következő fájlt: <a href="./KedvencEnekeim.abc"><type>KedvencEnekeim.abc</type></a></li>
+        <li class="lead">Hány byte-ot foglal a letöltött fájl a számítógépünkön?</li>
+        <li class="lead">Indítsuk el az ABCexplorer programot, és töltsük be az imént lementett fájlt!</li>
+        <li class="lead">Nézzük meg a fájl tartalomjegyzékét! Hány dallamot találunk benne?</li>
+        <li class="lead">Kattintsuk a tartalomjegyzékben a fájl neve előtti mínusz jelre! Mi történik?</li>
+        <li class="lead">Zárjuk be a betöltött <type>.abc</type> fájlt, majd nyissuk meg újra!</li>
+        <li class="lead">Zárjuk be a programot, majd indítsuk újra! Mit mutat most a tartalomjegyzék?</li>
+      </ol>
+    </p>
+  </blockquote>
+  <!-- Alsó nav-->
+  <div class="row">
+    <div class="col-xs-12">
+      <hr />
+    </div>
+    <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
+      <a class="btn btn-default btn-block btn-lg" href="../2-02nyitokepernyo/" role="button">
+      <span class="glyphicon glyphicon-backward" style="margin-right: 6px;"></span> Vissza 
+      </a>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <a class="btn btn-primary btn-block btn-lg" href="../2-04lejatszas/" role="button">
+      Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
+      </a>
+    </div>
+  </div>
+</div> <!--container vege-->
+<script>
+  $(document).ready(function() {
+    $ABC_UI.init();
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="hu">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/abc/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/abc/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/abc/images/favicon-16x16.png" />
+    <link rel="manifest" href="/abc/images/site.webmanifest" />
+    <link rel="mask-icon" href="/abc/images/safari-pinned-tab.svg" color="#6a83b9" />
+    <link rel="shortcut icon" href="/abc/images/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#6a83b9" />
+    <meta name="msapplication-config" content="/abc/images/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jqBootstrapValidation.min.js"></script>
+    <!-- ABC-UI -->
+    <link rel="stylesheet" href="/css/music.min.css" />
+    <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <title>ABCexplorer - Kottanyomtatás</title>
+</head>
+<body>
+<div class="container"> <!-- Bootstrap container eleje-->
+  <div class="page-header">
+    <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Fájlkezelés, programismeret</h1>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width: 99%;">
+      <span class="sr-only">99% kész</span>
+    </div>
+  </div>
+  <h2 class="text-center">ABCexplorer - Kottanyomtatás</h2>
+  <p class="lead">
+  Az ABCexplorer programon kívül is meg akarjuk nézni az ABC kódból létrehozott kottáinkat? Semmi probléma! Többféle képformátumba, és PDF-be is ki tudjuk őket menteni. Ha van nyomtatónk, közvetlenül papírra is nyomtathatunk.
+  </p>
+  <p class="lead">
+  Válasszuk ki a tartalomjegyzékben a kívánt zenedarabot, és a Zenedarab menüben mutassunk a Zenedarab átdolgozása csoportra. 
+  </p>
+  <p align="center">
+    <img src="/abc/images/2-06nyomtatas.png" alt="Zenedarab menü Zenedarab átdolgozása csoport"  width="936" height="505" >
+  </p>
+  <p class="lead">Válasszuk például a PDF-állomány... menüpontot! Fel fog ugrani egy Oldalbeállítás (Átdolgozás) ablak, ahol a szokásos nyomtatási beállítások (oldalméret, fej- és lábléc, stb.) mellett speciális, kottanyomtatásra jellemző beállításokat is találunk. Pl. könnyűszerrel eltávolíthatjuk a dalszöveget, vagy eltüntethetjük a tempó jelölést a nyomtatandó kottánkból.</p>
+  <p align="center">
+    <img src="/abc/images/2-06nyomtatas2.png" alt="Oldalbeállítás (Átdolgozás) ablak a PDF nyomtatáshoz"  width="785" height="559" >
+  </p>
+  <p class="lead"></p>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-pencil" style="margin-right: 6px;"></span>Feladatok
+      <ol start="80">
+        <li class="lead">Nyissuk meg újra a <a href="../2-03fajlbetoltes/KedvencEnekeim.abc"><type>KedvencEnekeim.abc</type></a>-t, és készítsünk PDF-et az „Ajtódnál valaki megáll” című ének kottájával! Tartsuk meg az alapértelmezett beállításokat!</li>
+        <li class="lead">Ugyanígy mentsünk egy JPEG formátumú képet is ugyanarról a kottáról, ugyanabba a mappába!</li>
+        <li class="lead">Nézzük meg a Windows intézőben a <type>KedvencEnekeim.abc</type>, és a most létrehozott PDF és JPEG fájl méretét! Melyik a legkisebb és a legnagyobb méretű?</li>
+        <li class="lead">Ellenőrizzük az elmentett kották minőségét egy PDF olvasó, és egy képnézegető programmal! Mindkettőben nagyítsunk rá a testvér szóra! Mit látunk? Mi ennek a jelentősége?</li>
+        <li class="lead">Nézzük végig az összes beállítási lehetőséget az Oldalbeállítás (Átdolgozás) ablakban, és állítsunk be mindent úgy, ahogy nekünk tetszik! Ha van nyomtatónk, nyomtassuk ki a végeredményt!</li>
+      </ol>
+    </p>
+  </blockquote>
+  <!-- Alsó nav-->
+  <div class="row">
+    <div class="col-xs-12">
+      <hr />
+    </div>
+    <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
+      <a class="btn btn-default btn-block btn-lg" href="../2-05szerkesztes/" role="button">
+      <span class="glyphicon glyphicon-backward" style="margin-right: 6px;"></span> Vissza 
+      </a>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <a class="btn btn-primary btn-block btn-lg" href="../2-07telepites/" role="button">
+      Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
+      </a>
+    </div>
+  </div>
+</div> <!--container vege-->
+
+<script>
+    $ABC_UI.init();
+</script>
+</body>
+</html>

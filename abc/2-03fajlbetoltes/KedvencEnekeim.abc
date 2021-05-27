@@ -1,0 +1,91 @@
+%abc
+%%abc-alias none
+%%abc-creator ABCexplorer 1.6.1 [2020. 12. 27.]
+
+X:1
+T:(cím nélkül)
+M: 3/4
+L:1/8
+Q:1/8=120
+K:C
+%%player_right
+%%MIDI program 25
+"C"z C"G"EG "C"C2 | "G"C3"C"x/64C "G"C2 | "G"C6 "C"x/64 "C"x/64 |]
+
+X:385
+T:Szelíd szemed, Úr Jézus
+M:4/4
+L:1/4
+C: Lars Stenbäck 1811-1870 (finn)
+O: H. Nyberg 1873-1957
+K:D
+(B,/C/) | D D E (D/C/) | B,2 !shortphrase!B, (D/E/) |
+w: Sze-*líd sze-med, Úr* Jé-zus, Jól*
+F F B (A/B/) | F E !shortphrase!F (B/c/) | d d d (c/^A/)
+w: lát-ja min-den* vét-ke-met; Sze-*mé-lye-met ne
+B (=A/G/) !shortphrase!F (D/E/) | F F E (D/C/) | B,2 B, |]
+w: ves-se* meg Sze-*líd sze-med, Úr* Jé-zus!
+W: 2. Szelíd szemed, Úr Jézus, Tekintsem rám, ha roskadok;
+W:  Adjon békét, bocsánatot Szelíd szemed, Úr Jézus!
+W: 3. Szelíd szemed, Úr Jézus, Tudom, hogy vádat is emel;
+W:  Vétkeztem én, ítéljen el Szelíd szemed, Úr Jézus!
+W: 4. Szelíd szemed, Úr Jézus, Elítél bár, lásd, én megint
+W:  Csak várom, hogy majd rám tekint Szelíd szemed, Úr Jézus!
+
+X:552
+T:Ajtódnál valaki megáll
+M:2/4
+L:1/8
+Q:1/8=180
+O:Spirituálé
+K:E
+E E2 G | FE CE | E4-| E2 z2 | B B2 e | cB GB | B4-| B2 z2 |
+w:1.~Aj-tód-nál va-la-ki meg-áll,* Aj-tód-nál va-la-ki meg-áll,*
+(B3e) | c2 B2 | G G2 E | E2 !shortphrase!C2 | E E2 G | FE CE | E4-| E2 z2 ||
+w: Ó,* test-vér, most légy csak csend-ben, Aj-tód-nál va-la-ki meg-áll.*
+|: G2 GE | G2 E2 | E E2 G | FE CE | E4-| E2 z2 |
+w:2.~Jé-zu-sod áll kinn, aj-tó-don va-la-ki ko-pog,*
+w:3.~Jé-zu-sod áll kinn, bo-csásd be szí-ved aj-ta-ján,*
+c2 cG | c2 G2 | B B2 e | cB GB | B4-|B2 z2 |
+w: Jé-zu-sod áll kinn, aj-tó-don va-la-ki ko-pog.*
+w: Jé-zu-sod áll kinn, bo-csásd be szí-ved aj-ta-ján!*
+(B3e) | c2 B2 | G G2 E | E2 !shortphrase!C2 | E E2 G | FE CE | E4-| E2 z2 :|
+w: Ó,* test-vér, most légy csak csend-ben, Aj-tó-don va-la-ki ko-pog.*
+w: Ó,* test-vér, most légy csak csend-ben, Bo-csásd be szí-ved aj-ta-ján!*
+
+X:560
+T:Indulj az úton
+M:2/4
+L:1/8
+Q:1/8=120
+K:F
+"dmin"z D DD | "amin"E2 E2-|"C"E [1 E DC | "dmin"D4 :|[2 E "C7"DE | "F"F4 |]
+w: In-dulj az ú-ton,* e-lõ-re nézz,
+w: Nem tán-to-rít-hat***** e-zer-nyi vész.
+z F GA | "Bb"B2 B2-| "C7"BB AG | "F"B2 A2 |
+w: É-le-ted út-ját* vé-gig kell jár-ni,
+"Bb"z D DD | "amin"E2 E2-| "C"EE DC | "dmin"D2 D2 |]
+w: És az út vé-gén* Jé-zus fog vár-ni!
+W:2. Ha néha gondok csüggesztenek, Bátran elõre, fel a fejed!
+W: Gyalog kell menned, nem lehet szállni, De az út végén Jézus fog várni.
+W:3. Szeresd a társad, segítsd meg õt, Ne hagyd a porban a csüggedõt!
+W: Ezen az úton együtt kell járni, És az út végén Jézus fog várni.
+W:4. Most mi is bátran elindulunk. Te vezess minket, s hozzád jutunk.
+W: Nem fogunk többé tétlenül állni, Mert az út végén Jézus fog várni.
+
+X:575
+T:Téged kér szívünk
+M:3/4
+L:1/8
+Q:1/8=120
+K:D
+%%player_right
+%%MIDI program 25
+DF | "D"A>A A2 "G"BB | "D"!shortphrase!A4 DF |
+w: Té-ged kér szí-vünk, Jé-zus, jöjj! Té-ged
+"Dmaj"A>A A2 GF | "A"!shortphrase!E4 DF | "D"A>A A2 "G"BB |
+w: kér szí-vünk, Jé-zus, jöjj! Té-ged kér szí-vünk, Jé-zus,
+"f#min"!shortphrase!A4 "G"G2 | [M:2/4] ("D"F/E/)D "A"EE | [M:3/4] "D"D4 |]
+w: jöjj! Ó, Jé-*zus, hoz-zánk jöjj!
+
+

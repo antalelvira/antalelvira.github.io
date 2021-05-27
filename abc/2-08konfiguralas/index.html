@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="hu">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/abc/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/abc/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/abc/images/favicon-16x16.png" />
+    <link rel="manifest" href="/abc/images/site.webmanifest" />
+    <link rel="mask-icon" href="/abc/images/safari-pinned-tab.svg" color="#6a83b9" />
+    <link rel="shortcut icon" href="/abc/images/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#6a83b9" />
+    <meta name="msapplication-config" content="/abc/images/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jqBootstrapValidation.min.js"></script>
+    <!-- ABC-UI -->
+    <link rel="stylesheet" href="/css/music.min.css" />
+    <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <title>Az ABCexplorer beállítása</title>
+</head>
+<body>
+<div class="container"> <!-- Bootstrap container eleje-->
+  <div class="page-header">
+    <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Telepítés, konfigurálás</h1>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+      <span class="sr-only">100% kész</span>
+    </div>
+  </div>
+  <h2 class="text-center">Ráadás: Az ABCexplorer beállítása az első használat előtt</h2>
+  <p class="lead">
+  Telepítés után, az első használat előtt célszerű néhány alapértelmezett beállítást megváltoztatni az ABCexplorerben.
+  </p>
+  <p class="lead">A legfontosabb, hogy a magyar ékezetes karaktereket jól kell kezelnie a programnak. Ehhez a Beállítások menü Külső eszközök lapján keressük meg az  „ABC-ből Postscriptbe történő átalakítás eszközének elérési útvonala” sort, és a jobb oldalt írjuk át így:</p>
+  <p align="center">
+    <img src="/abc/images/2-08konfiguralas.png" alt="Beállítások/Külső eszközök"  width="663" height="507" >
+  </p>
+  <p class="lead">Továbbá válasszuk ki a Fájl menü Állomány átdolgozása csoport PDF-állomány... menüpontját, és az Oldalbeállítások között, a Formátum csoporton belül a Kézi utasítások részbe gépeljük be: <code>encoding 2</code></p>
+  <p align="center">
+    <img src="/abc/images/2-08konfiguralas2.png" alt="PDF-állomány.../Formátum/Kézi utasítások"  width="785" height="559" >
+  </p>
+  <p class="lead">Ezzel a két módosítással elértük, hogy a program tökéletesen kezeli az ISO-8859-2	(Latin2) kódolású fájlokat.</p>
+  <p class="lead">
+  Érdemes szintén az Oldalbeállítások között, a Formátum csoport Oldal és szélei részben kiválasztani az A4 papírtípust, és a nekünk tetsző nagyítást beállítani az Általános arány csúszka húzásával (pl. 105-re). Mindezek a beállítások nem csak egy nyomtatásra/mentésre érvényesek, hanem érvényben maradnak, amíg meg nem változtatjuk őket.</p>
+  <p class="lead">Az ABCexplorer alapértelmezés szerint minden megnyitott fájlról készít egy <type>.BAK</type> kiterjesztésű másolatot. Ha ez zavar minket, a Beállítások menü Könyvtárak és fájlok fülén érdemes kikapcsolni ezt a funkciót. Ugyanitt a Felhasználóbarát név kérése is kikapcsolható, ha nem akarunk minden ABC fájlunkba egy plusz mezőt írni.</p>
+  <p align="center">
+    <img src="/abc/images/2-08konfiguralas3.png" alt="Beállítások/Könyvtárak és fájlok"  width="662" height="506" >
+  </p>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-pencil" style="margin-right: 6px;"></span>Gondold végig, vagy nézz utána!
+      <ol start="85">
+        <li class="lead">Mi az, hogy karakterkódolás? Hogyan tudod megnézni, átállítani?</li>
+      </ol>
+    </p>
+  </blockquote>
+  <hr/>
+  <p class="lead" align="center">A tananyag végére értünk. Kellemes és hasznos időtöltést kívánunk az ABC világában!</p>
+  <!-- Alsó nav-->
+  <div class="row">
+    <div class="col-xs-12">
+      <hr />
+    </div>
+    <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
+      <a class="btn btn-default btn-block btn-lg" href="../2-07telepites/" role="button">
+      <span class="glyphicon glyphicon-backward" style="margin-right: 6px;"></span> Vissza 
+      </a>
+    </div>
+<!--    <div class="col-xs-12 col-md-3">
+      <a class="btn btn-primary btn-block btn-lg" href="#" role="button">
+      Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
+      </a>
+    </div>-->
+  </div>
+</div> <!--container vege-->
+
+<script>
+    $ABC_UI.init();
+</script>
+</body>
+</html>

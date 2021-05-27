@@ -8,3 +8,8 @@
 2020.12.16 23:43:34 WARN  no build tool detected in workspace 'D:\Dokumentumok\UjratervezesKezdoInformatika\ifksp\antalelvira.github.io'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
 jan. 05, 2021 10:31:43 DU org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTraceNotification
+[0m2021.05.19 14:35:18 INFO  Started: Metals version 0.10.2 in workspace 'D:\Dokumentumok\UjratervezesKezdoInformatika\ifksp\antalelvira.github.io' for client vscode 1.56.2.[0m
+[0m2021.05.19 14:35:19 INFO  time: initialize in 0.87s[0m
+[0m2021.05.19 14:35:23 WARN  resetting database: D:\Dokumentumok\UjratervezesKezdoInformatika\ifksp\antalelvira.github.io\.metals\metals.h2.db[0m
+[0m2021.05.19 14:35:25 WARN  Build server is not auto-connectable.[0m
+[0m2021.05.19 14:35:25 WARN  no build tool detected in workspace 'D:\Dokumentumok\UjratervezesKezdoInformatika\ifksp\antalelvira.github.io'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m

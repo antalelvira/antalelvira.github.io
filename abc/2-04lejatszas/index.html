@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head lang="hu">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/abc/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/abc/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/abc/images/favicon-16x16.png" />
+    <link rel="manifest" href="/abc/images/site.webmanifest" />
+    <link rel="mask-icon" href="/abc/images/safari-pinned-tab.svg" color="#6a83b9" />
+    <link rel="shortcut icon" href="/abc/images/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#6a83b9" />
+    <meta name="msapplication-config" content="/abc/images/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jqBootstrapValidation.min.js"></script>
+    <!-- ABC-UI -->
+    <link rel="stylesheet" href="/css/music.min.css" />
+    <script src="/js/abc-ui-1.0.0.min.js"></script>
+    <link rel="stylesheet" href="/css/spec.css" />
+    <link rel="stylesheet" href="/css/spec2.css" />
+    <title>ABCexplorer - Zenelejátszás kottából</title>
+</head>
+<body>
+<div class="container"> <!-- Bootstrap container eleje-->
+  <div class="page-header">
+    <h1><small>Kotta és MIDI zene készítés számítógépen az ABC jelölés használatával</small> <br/> Fájlkezelés, programismeret</h1>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+      <span class="sr-only">90% kész</span>
+    </div>
+  </div>
+  <h2 class="text-center">ABCexplorer - Zenelejátszás kottából</h2>
+  <p class="lead">
+    Válasszunk egy dallamot a tartalomjegyzékből, és nézzük meg közelebbről a zenelejátszás eszköztárát:</p>
+  <p align="center">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/  xlink"  width="936px" height="180px" viewBox="0 0 1366 260">
+      <image width="1366" height="260" xlink:href="/abc/images/2-04lejatszaseszkoztar.png">
+      </image>
+    <g class="special">
+      <circle id="c1" cy="0" cx="0" r="25" />
+    </g>
+    <rect class="blank" x="10" y="68" width="423" height="192" />
+    <rect class="blank" x="433" y="145" width="920" height="115" />
+    <a><use href="#c1" x="1145" y="108" /></a>
+    <text style="font-size: 1.7em;font-style: oblique;" x="1180" y="105">A zenelejátszás<tspan x="1204" y="130">eszköztára.</tspan></text>
+    </svg>
+  </p>
+  <p class="lead">
+    A szokásos gombokkal indíthatjuk és állíthatjuk meg a lejátszást:  </p>
+  <p align="center">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/  xlink"  width="936px" height="80px" viewBox="0 0 936 80">
+      <image width="936" height="80" xlink:href="/abc/images/2-04lejatszaseszkoztar2.png">
+      </image>
+      <g class="special">
+        <circle id="c" cy="0" cx="0" r="8" />
+      </g>
+      <g id="group1">
+        <a><use href="#c" x="17" y="25" /></a>
+      </g>
+      <text x="13" y="64">vissza az elejére</text>
+      <g id="group2">
+        <a><use href="#c" x="50" y="25" /></a>
+      </g>
+      <text x="46" y="64">lejátszás</text>
+      <g id="group3">
+        <a><use href="#c" x="83" y="25" /></a>
+      </g>
+      <text x="79" y="64">szünet</text>
+      <g id="group4">
+        <a><use href="#c" x="116" y="25" /></a>
+      </g>
+      <text x="112" y="64">stop</text>
+    </svg>
+  </p>
+  <p class="lead">
+    Egy folyamatjelző sáv mutatja, hol tart a lejátszás. Beállíthatjuk a lejátszás sebességét (tempóját) és hangerejét is.</p>
+  <p align="center">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/  xlink"  width="936px" height="80px" viewBox="0 0 936 80">
+      <image width="936" height="80" xlink:href="/abc/images/2-04lejatszaseszkoztar2.png">
+      </image>
+      <g class="special">
+        <circle id="c" cy="0" cx="0" r="8" />
+      </g>
+      <g id="group1">
+        <a><use href="#c" x="110" y="64" /></a>
+      </g>
+      <text x="130" y="71">folyamatjelző sáv</text>
+      <g id="group2">
+        <a><use href="#c" x="200" y="42" /></a>
+      </g>
+      <text x="210" y="71">a lejátszás tempója</text>
+      <g id="group3">
+        <a><use href="#c" x="331" y="42" /></a>
+      </g>
+      <text x="228" y="71">hangerő</text>
+    </svg>
+  </p>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-eye-open" style="margin-right: 6px;"></span>Tempó!
+      <ul>
+          <li class="lead"><p class="lead">A dallam tempóját BPM-ben (angolul beats per minute, magyarul percenkénti leütésszám) szokás megadni. Az emberi szív nyugalmi helyzetben percenként kb. 60-80-at ver. Ez a 60-80 BPM az angol keringő tempója is. 125 BPM-es például Avicii Hey Brother című száma. A bécsi keringő tempója 150-180 BPM.</p></li>
+          <li class="lead"><p class="lead">A dallamunk ideális tempóját az ABC kódban is eltárolhatjuk a „Q: tempo” fejlécmező segítségével. Pl. „Q:180” azt jelenti, hogy az alapértelmezett hangértékből 180 darabot kell lejátszani percenként. Írhatjuk azt is, hogy „Q:1/8 = 180”, ebben az esetben a nyolcadokból kell 180-at játszani percenként.</p></li>
+      </ul>
+    </p>
+  </blockquote>
+  <p class="lead">Hangszert is választhatunk!</p>
+  <p align="center">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/  xlink"  width="936px" height="80px" viewBox="0 0 936 80">
+      <image width="936" height="80" xlink:href="/abc/images/2-04lejatszaseszkoztar2.png">
+      </image>
+      <g class="special">
+        <circle id="c" cy="0" cx="0" r="8" />
+      </g>
+      <g id="group1">
+        <a><use href="#c" x="550" y="30" /></a>
+      </g>
+      <text x="572" y="37">hangszerválasztó</text>
+    </svg>
+  </p>
+  <p class="lead">Egy átlagos számítógépen a lista száznál is több lehetőséget tartogat, koncertzongorától a fúvósokon, vonósokon, és ritmushangszereken át egészen a különleges hangkeltőkig, mint például a madárcsicsergés vagy a fegyverropogás.</p>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-eye-open" style="margin-right: 6px;"></span>Miről van itt szó?
+      <ul>
+          <li class="lead"><p class="lead">Az ABC fájl nem tartalmaz igazi zenész által feljátszott muzsikát. Csak a kotta van benne, ami alapján a számítógépbe bújt „MIDI zenész” szíves örömest eljátssza a nótánkat, ha megkérjük! Épp ezért foglal az ABC a hagyományos zenefájloknál jóval kisebb helyet a merevlemezen...</p></li>
+      </ul>
+    </p>
+  </blockquote>
+  <p class="lead">Ha szeretnénk, akkordkíséretet is kérhetünk a dallamhoz.</p>
+  <p align="center">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/  xlink"  width="936px" height="120px" viewBox="0 0 936 120">
+      <image width="936" height="120" xlink:href="/abc/images/2-04lejatszaseszkoztar3.png">
+      </image>
+      <g class="special">
+        <circle id="c" cy="0" cx="0" r="8" />
+      </g>
+      <g id="group1">
+        <a><use href="#c" x="520" y="60" /></a>
+      </g>
+      <text x="575" y="75">akkordkíséret ki-/bekapcsolása</text>
+    </svg>
+  </p>
+  <blockquote class="blockquote">
+    <p class="lead">
+      <span class="glyphicon glyphicon-pencil" style="margin-right: 6px;"></span>Próbáljuk ki!
+      <ol start="64">
+        <li class="lead">Nyissuk meg újra a korábban letöltött fájlt! (<a href="../2-03fajlbetoltes/KedvencEnekeim.abc"><type>KedvencEnekeim.abc</type></a>)</li>
+        <li class="lead">Válasszunk egy dallamot, és játsszuk le!</li>
+        <li class="lead">Hányféle hangszert ismer a számítógépünk?</li>
+        <li class="lead">Mi az alapértelmezett tempó a „Szelíd szemed, Úr Jézus” című ének lejátszásakor?</li>
+        <li class="lead">Milyen tempó tűnik itt helyesnek? Mi milyen gyorsan énekelnénk ezt a dallamot, és miért?</li>
+        <li class="lead">Indítsuk el az „Indulj az úton” című éneket is! Hány BPM itt a tempó?</li>
+        <li class="lead">Mi az oka, hogy a két éneket különböző tempóval akarja játszani a „MIDI zenész”?</li>
+        <li class="lead">Az „Indulj az úton” lejátszása közben próbáljuk ki- és bekapcsolni az akkordkíséretet! Mikor lehet megnyomni a gombot?</li>
+        <li class="lead">Melyik énekekhez tud kíséretet játszani a számítógép? Min múlik ez?</li>
+      </ol>
+    </p>
+  </blockquote>
+  <!-- Alsó nav-->
+  <div class="row">
+    <div class="col-xs-12">
+      <hr />
+    </div>
+    <div class="col-xs-12 col-md-offset-3 col-md-3 text-center">
+      <a class="btn btn-default btn-block btn-lg" href="../2-03fajlbetoltes/" role="button">
+      <span class="glyphicon glyphicon-backward" style="margin-right: 6px;"></span> Vissza 
+      </a>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <a class="btn btn-primary btn-block btn-lg" href="../2-05szerkesztes/" role="button">
+      Tovább <span class="glyphicon glyphicon-play" style="margin-right: 6px;"></span>
+      </a>
+    </div>
+  </div>
+</div> <!--container vege-->
+
+<script>
+    $ABC_UI.init();
+</script>
+</body>
+</html>
